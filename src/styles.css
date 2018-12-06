@@ -1,0 +1,17 @@
+#root {
+  font-family: "Arial", sans-serif;
+}
+#new-post {
+  width: 420px;
+  height: 195px;
+  border-radius: 10px;
+  border: 1px solid darkblue;
+}
+#new-post:hover {
+  border: 2px solid darkgreen;
+}
+.btn {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
