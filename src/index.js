@@ -24,7 +24,8 @@ export default class App extends React.Component {
             onChange={this.handleChange}
             value={this.state.text}
           />
-          <button class="btn">Save Post</button>
+          <br />
+          <button className="btn">Save Post</button>
         </form>
         <List items={this.state.items} />
       </div>
