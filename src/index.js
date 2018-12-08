@@ -1,3 +1,4 @@
+// index.js (version 1.0.0)
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -17,7 +18,7 @@ export default class App extends React.Component {
     return (
       <div>
         <h1>Hello world</h1>
-        <Text />
+        <Text message={"This is Todo v.1.0.0. Welcome"} />
         <form onSubmit={this.handleSubmit}>
           <textarea
             id="new-post"
@@ -52,7 +53,16 @@ export default class App extends React.Component {
 }
 class Text extends React.Component {
   render() {
-    return <div>My Site Name</div>;
+    return (
+      <div>
+        <p>My Site Name</p>
+        <button class="btn" onClick={() => alert("click")}>
+          Click me!
+        </button>
+        <br />
+        {this.props.message}!
+      </div>
+    );
   }
 }
 class List extends React.Component {
