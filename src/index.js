@@ -42,7 +42,7 @@ export default class App extends React.Component {
     }
     const newItem = {
       text: this.state.text,
-      id: Date.now()
+      id: performance.now()
     };
     this.setState(state => ({
       items: state.items.concat(newItem),
