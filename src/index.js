@@ -17,6 +17,7 @@ export default class App extends React.Component {
     return (
       <div>
         <h1>Hello world</h1>
+        <Text />
         <form onSubmit={this.handleSubmit}>
           <textarea
             id="new-post"
@@ -24,7 +25,8 @@ export default class App extends React.Component {
             onChange={this.handleChange}
             value={this.state.text}
           />
-          <button class="btn">Save Post</button>
+          <br />
+          <button className="btn">Save Post</button>
         </form>
         <List items={this.state.items} />
       </div>
@@ -48,7 +50,11 @@ export default class App extends React.Component {
     }));
   }
 }
-
+class Text extends React.Component {
+  render() {
+    return <div>My Site Name</div>;
+  }
+}
 class List extends React.Component {
   render() {
     return (
