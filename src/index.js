@@ -26,7 +26,7 @@ export default class App extends React.Component {
             value={this.state.text}
           />
           <br />
-          <button className="btn">Save Post</button>
+          <button className="btn-300">Save Post</button>
         </form>
         <List items={this.state.items} />
       </div>
