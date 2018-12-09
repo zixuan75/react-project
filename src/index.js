@@ -98,9 +98,10 @@ class Text extends React.Component {
 }
 class List extends React.Component {
   render() {
+    let { items } = this.props;
     return (
       <div className="list">
-        {this.props.items.map(item => (
+        {items.map(item => (
           <div key={item.id}>
             <p>{item.text}</p>
           </div>
