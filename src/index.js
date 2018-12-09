@@ -6,10 +6,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Router, Route } from "react-router";
 import NewWorld from "./world.js";
+import WorldHeader from "./world.js";
 import "./styles.css";
 
 var properties = {
-  myProperty: "This is a property"
+  myProperty: "This is a property",
+  rxdetail: "No RX installed."
 };
 export default class MainLayout extends React.Component {
   render() {
@@ -147,7 +149,10 @@ function RenderWorld(root) {
   if (!root) {
     console.error("No root defined (index.js:react, line 137)");
   }
-  ReactDOM.render(<NewWorld logThis={properties.myProperty} />, root);
+  ReactDOM.render(
+    <NewWorld rxdetail={properties.rxdetail} logThis={properties.myProperty} />,
+    root
+  );
 }
 function RenderMainLayout(root, header, content) {
   if (!root) {
@@ -166,4 +171,4 @@ const rootElement = document.getElementById("root");
 RenderMainLayout(rootElement, <Header />, <App />);
 
 const worldElement = document.getElementById("world");
-RenderWorld(worldElement);
+RenderWorld(worldElement, <WorldHeader />);
