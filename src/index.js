@@ -5,15 +5,28 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Router, Route } from "react-router";
-
+import NewWorld from "./world.js";
 import "./styles.css";
 
+var properties = {
+  myProperty: "This is a property"
+};
 export default class MainLayout extends React.Component {
   render() {
     console.log(this.props.logThis);
     return (
       <div>
-        <App />
+        {this.props.header}
+        {this.props.content}
+      </div>
+    );
+  }
+}
+class Header extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Hello world</h1>
       </div>
     );
   }
@@ -42,9 +55,6 @@ class App extends React.Component {
           Make sure to make a pull request from your repisitory
           to my repository so I can receive the same changes that you made.
         */}
-        <div>
-          <h1>Hello world!</h1>
-        </div>
         <Text
           message={"This is Todo v.1.0.0. Welcome"}
           buttonName="Click me!"
@@ -69,7 +79,7 @@ class App extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     if (!this.state.text.length) {
-      console.error("Please enter a post at: index.js:react, line 55");
+      console.error("Please enter a post at: index.js:react, line 71");
       return;
     }
     const newItem = {
@@ -132,10 +142,28 @@ class List extends React.Component {
     );
   }
 }
-const NewWorld = () => <h1>Another one</h1>;
 
+function RenderWorld(root) {
+  if (!root) {
+    console.error("No root defined (index.js:react, line 137)");
+  }
+  ReactDOM.render(<NewWorld logThis={properties.myProperty} />, root);
+}
+function RenderMainLayout(root, header, content) {
+  if (!root) {
+    console.error("No root defined (index.js:react, line 143).");
+  }
+  ReactDOM.render(
+    <MainLayout
+      header={header}
+      content={content}
+      logThis={properties.myProperty}
+    />,
+    root
+  );
+}
 const rootElement = document.getElementById("root");
-ReactDOM.render(<MainLayout logThis="This is a property" />, rootElement);
+RenderMainLayout(rootElement, <Header />, <App />);
 
 const worldElement = document.getElementById("world");
-ReactDOM.render(<NewWorld />, worldElement);
+RenderWorld(worldElement);
