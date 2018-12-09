@@ -52,6 +52,7 @@ class App extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     if (!this.state.text.length) {
+      console.error("Please enter a post at: index.js:react, line 55");
       return;
     }
     const newItem = {
