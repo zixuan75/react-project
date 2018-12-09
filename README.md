@@ -1,9 +1,10 @@
 # :rainbow: The React Project
 
-hello world!
-Welcome to The React Project!!
+Welcome to The React Project!!:2nd_place_medal:
 
-Remember, it's going to render those components with the id="component name" unless if you have React Devtools where you can see the jsx components.
+## Remember
+
+Remember, we're using React, so it's going to render those components with the id="component name" unless if you have React Devtools where you can see the jsx components.
 
 ```jsx
 <div id="..">
