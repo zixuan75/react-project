@@ -4,7 +4,17 @@ import ReactDOM from "react-dom";
 
 import "./styles.css";
 
-export default class App extends React.Component {
+export default class MainLayout extends React.Component {
+  render() {
+    console.log(this.props.logThis);
+    return (
+      <div>
+        <App />
+      </div>
+    );
+  }
+}
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,15 +25,19 @@ export default class App extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   render() {
+    let className = "new-post";
     return (
       <div>
         <div>
-          <h1>Hello world7H</h1>
+          <h1>Hello world!</h1>
         </div>
-        <Text message={"This is Todo v.1.0.0. Welcome"} />
+        <Text
+          message={"This is Todo v.1.0.0. Welcome"}
+          buttonName="Click me!"
+        />
         <form onSubmit={this.handleSubmit}>
           <textarea
-            id="new-post"
+            id={className}
             placeholder="Type a post"
             onChange={this.handleChange}
             value={this.state.text}
@@ -41,11 +55,12 @@ export default class App extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     if (!this.state.text.length) {
+      console.error("Please enter a post at: index.js:react, line 55");
       return;
     }
     const newItem = {
       text: this.state.text,
-      id: Date.now()
+      id: performance.now()
     };
     this.setState(state => ({
       items: state.items.concat(newItem),
@@ -55,6 +70,7 @@ export default class App extends React.Component {
 }
 class Text extends React.Component {
   render() {
+    let { message, buttonName } = this.props;
     return (
       <div>
         <div className="navbar-collector">
@@ -67,23 +83,23 @@ class Text extends React.Component {
           </div>
         </div>
         <button className="btn" onClick={this.handleClick}>
-          Click me!
+          {buttonName}
         </button>
         <div>
-          <p>{this.props.message}!</p>
+          <p>{message}!</p>
         </div>
       </div>
     );
   }
   handleClick() {
-    var variable = "You clicked me!";
+    let variable = "Hello world";
     alert(variable);
   }
 }
 class List extends React.Component {
   render() {
     return (
-      <div>
+      <div className="list">
         {this.props.items.map(item => (
           <div key={item.id}>
             <p>{item.text}</p>
@@ -94,4 +110,4 @@ class List extends React.Component {
   }
 }
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<MainLayout logThis="This is a property" />, rootElement);

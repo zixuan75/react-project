@@ -1,15 +1,24 @@
-# :rainbow: The React Project
+# :rainbow: The React Project: [![Coverage Status](https://coveralls.io/repos/github/zixuan75/react-project/badge.svg)](https://coveralls.io/github/zixuan75/react-project?branch=master)
+Welcome to The React Project!!:2nd_place_medal:
 
-[![Coverage Status](https://coveralls.io/repos/github/zixuan75/react-project/badge.svg)](https://coveralls.io/github/zixuan75/react-project?branch=master)
-hello world!
-Welcome to The React Project!!
+## Remember
 
-Remember, it's going to render those components with the id="component name" unless if you have React Devtools where you can see the jsx components.
+Remember, we're using React, so it's going to render those components with the id="component name" unless if you have React Devtools where you can see the jsx components.
+
+(~React Devtools~)
+
+```html
+<div id="..">
+  <div id=".."><p>...</p></div>
+</div>
+```
+
+(React Devtools)
 
 ```jsx
-<div id="..">
-  <div id="..">
-    <a>...</a>
-  </div>
-</div>
+<App>
+  <Text>
+    <p>...</p>
+  </Text>
+</App>
 ```
