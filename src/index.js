@@ -99,7 +99,7 @@ class Text extends React.Component {
 class List extends React.Component {
   render() {
     return (
-      <div>
+      <div className="list">
         {this.props.items.map(item => (
           <div key={item.id}>
             <p>{item.text}</p>
