@@ -25,6 +25,7 @@ class App extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   render() {
+    let className = "new-post";
     return (
       <div>
         <div>
@@ -33,7 +34,7 @@ class App extends React.Component {
         <Text message={"This is Todo v.1.0.0. Welcome"} />
         <form onSubmit={this.handleSubmit}>
           <textarea
-            id="new-post"
+            id={className}
             placeholder="Type a post"
             onChange={this.handleChange}
             value={this.state.text}
