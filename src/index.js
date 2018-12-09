@@ -17,7 +17,9 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hello world</h1>
+        <div>
+          <h1>Hello world</h1>
+        </div>
         <Text message={"This is Todo v.1.0.0. Welcome"} />
         <form onSubmit={this.handleSubmit}>
           <textarea
@@ -55,14 +57,27 @@ class Text extends React.Component {
   render() {
     return (
       <div>
-        <p>My Site Name</p>
-        <button class="btn" onClick={() => alert("click")}>
+        <div className="navbar-collector">
+          <div className="navbar-items">
+            <br />
+            <div>
+              <a className="navbar-brand">My Site Name</a>
+            </div>
+            <br />
+          </div>
+        </div>
+        <button className="btn" onClick={this.handleClick}>
           Click me!
         </button>
-        <br />
-        {this.props.message}!
+        <div>
+          <p>{this.props.message}!</p>
+        </div>
       </div>
     );
+  }
+  handleClick() {
+    var variable = "You clicked me!";
+    alert(variable);
   }
 }
 class List extends React.Component {
