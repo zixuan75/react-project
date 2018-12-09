@@ -18,7 +18,7 @@ export default class App extends React.Component {
     return (
       <div>
         <div>
-          <h1>Hello world</h1>
+          <h1>Hello world7H</h1>
         </div>
         <Text message={"This is Todo v.1.0.0. Welcome"} />
         <form onSubmit={this.handleSubmit}>
