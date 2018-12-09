@@ -31,7 +31,10 @@ class App extends React.Component {
         <div>
           <h1>Hello world</h1>
         </div>
-        <Text message={"This is Todo v.1.0.0. Welcome"} />
+        <Text
+          message={"This is Todo v.1.0.0. Welcome"}
+          buttonName="Click me!"
+        />
         <form onSubmit={this.handleSubmit}>
           <textarea
             id={className}
@@ -67,6 +70,7 @@ class App extends React.Component {
 }
 class Text extends React.Component {
   render() {
+    let { message, buttonName } = this.props;
     return (
       <div>
         <div className="navbar-collector">
@@ -79,16 +83,16 @@ class Text extends React.Component {
           </div>
         </div>
         <button className="btn" onClick={this.handleClick}>
-          Click me!
+          {buttonName}
         </button>
         <div>
-          <p>{this.props.message}!</p>
+          <p>{message}!</p>
         </div>
       </div>
     );
   }
   handleClick() {
-    var variable = "You clicked me!";
+    let variable = "Hello world";
     alert(variable);
   }
 }
