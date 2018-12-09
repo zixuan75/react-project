@@ -6,7 +6,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Router, Route } from "react-router";
 import NewWorld from "./world.js";
-import WorldHeader from "./world.js";
 import "./styles.css";
 
 var properties = {
@@ -171,4 +170,4 @@ const rootElement = document.getElementById("root");
 RenderMainLayout(rootElement, <Header />, <App />);
 
 const worldElement = document.getElementById("world");
-RenderWorld(worldElement, <WorldHeader />);
+RenderWorld(worldElement);
