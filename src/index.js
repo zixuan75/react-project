@@ -4,6 +4,7 @@
 // index.js (version 1.0.4)
 import React from "react";
 import ReactDOM from "react-dom";
+import { Router, Route } from "react-router";
 
 import "./styles.css";
 
@@ -90,7 +91,15 @@ class Text extends React.Component {
           <div className="navbar-items">
             <br />
             <div>
-              <a className="navbar-brand">My Site Name</a>
+              <a className="navbar-brand" href="#">
+                Home
+              </a>
+            </div>
+            <br />
+            <div>
+              <a className="navbar-brand" href="#new">
+                Page
+              </a>
             </div>
             <br />
           </div>
@@ -123,5 +132,10 @@ class List extends React.Component {
     );
   }
 }
+const NewWorld = () => <h1>Another one</h1>;
+
 const rootElement = document.getElementById("root");
 ReactDOM.render(<MainLayout logThis="This is a property" />, rootElement);
+
+const worldElement = document.getElementById("world");
+ReactDOM.render(<NewWorld />, worldElement);
