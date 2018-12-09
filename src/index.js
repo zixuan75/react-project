@@ -1,4 +1,7 @@
-// index.js (version 1.0.0)
+// Welcome to the Complex App!
+// Author github:zixuan75 <wzixuanCC@gmail.com>/<wzixuanCC@hotmail.com>
+
+// index.js (version 1.0.4)
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -28,6 +31,12 @@ class App extends React.Component {
     let className = "new-post";
     return (
       <div>
+        {/* 
+          Welcome, everybody. 
+          You're free to edit this file anytime at my github repository
+          https://github.com/zixuan75/react-project by forking
+          the project and making some commits.
+        */}
         <div>
           <h1>Hello world!</h1>
         </div>
