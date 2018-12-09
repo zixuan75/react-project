@@ -4,7 +4,17 @@ import ReactDOM from "react-dom";
 
 import "./styles.css";
 
-export default class App extends React.Component {
+export default class MainLayout extends React.Component {
+  render() {
+    console.log(this.props.logThis);
+    return (
+      <div>
+        <App />
+      </div>
+    );
+  }
+}
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -94,4 +104,4 @@ class List extends React.Component {
   }
 }
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<MainLayout logThis="This is a property" />, rootElement);
