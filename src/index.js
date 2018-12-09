@@ -37,6 +37,10 @@ class App extends React.Component {
           https://github.com/zixuan75/react-project by forking
           the project and making some commits.
         */}
+        {/*
+          Make sure to make a pull request from your repisitory
+          to my repository so I can receive the same changes that you made.
+        */}
         <div>
           <h1>Hello world!</h1>
         </div>
