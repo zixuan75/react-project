@@ -52,7 +52,7 @@ a.navbar-brand {
   border: 2px solid green;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .navbar-collector {
     background-color: #eee;
   }
