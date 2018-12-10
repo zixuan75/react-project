@@ -1,8 +1,8 @@
 # Welcome to The React Project!
 Hello world! Welcome to our project!!
 
-1. ISSUES (2 levels down at ISSUES?)
-2. Can you FIX A ISSUE (3 levels down at Can you FIX A ISSUE?)
+1. ISSUES (2 levels down at "ISSUES?")
+2. Can you FIX A ISSUE (3 levels down at "Can you FIX A ISSUE?")
 
 ## React
 It's time to learn about React. You can visit Reactjs's main website [here](https://www.reactjs.org) to learn about React. 
