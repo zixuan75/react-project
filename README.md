@@ -1,4 +1,4 @@
-# :rainbow: The React Project: [![Coverage Status](https://coveralls.io/repos/github/zixuan75/react-project/badge.svg)](https://coveralls.io/github/zixuan75/react-project?branch=master)
+# :rainbow: The React:laughing: Project: [![Coverage Status](https://coveralls.io/repos/github/zixuan75/react-project/badge.svg)](https://coveralls.io/github/zixuan75/react-project?branch=master)
 
 Welcome to The React Project!!:2nd_place_medal:
 
