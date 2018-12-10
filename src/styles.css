@@ -4,6 +4,10 @@
   font-family: "Arial", sans-serif;
 }
 
+.body {
+  background-color: #eee;
+}
+
 ::-moz-placeholder {
   /* Firefox only! */
   font-family: "Arial", sans-serif;

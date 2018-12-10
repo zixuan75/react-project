@@ -15,7 +15,7 @@ export default class MainLayout extends React.Component {
   render() {
     console.log(this.props.logThis);
     return (
-      <div>
+      <div className="body">
         {this.props.header}
         {this.props.content}
       </div>
