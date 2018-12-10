@@ -4,7 +4,6 @@
 // index.js (version 1.0.4)
 import React from "react";
 import ReactDOM from "react-dom";
-import { Router, Route } from "react-router";
 import NewWorld from "./world.js";
 import "./styles.css";
 
@@ -37,13 +36,18 @@ class App extends React.Component {
     super(props);
     this.state = {
       items: [],
-      text: ""
+      text: "",
+      user: "",
+      myuser: "zixuan"
     };
-    this.handleChange = this.handleChange.bind(this);
+    this.handleChange1 = this.handleChange1.bind(this);
+    this.handleChange2 = this.handleChange2.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   render() {
-    let className = "new-post";
+    let textClassName = "new-post";
+    let userClassName = "user";
+    let { myuser } = this.state;
     return (
       <div>
         {/* 
@@ -56,17 +60,25 @@ class App extends React.Component {
           Make sure to make a pull request from your repisitory
           to my repository so I can receive the same changes that you made.
         */}
+        <p className="right">Hello {myuser}!</p>
         <Text
           message={"This is Todo v.1.0.0. Welcome"}
           buttonName="Click me!"
         />
         <form onSubmit={this.handleSubmit}>
+          <input
+            placeholder="User name"
+            id={userClassName}
+            value={this.state.user}
+            onChange={this.handleChange1}
+          />
+          <br />
           <textarea
             rols="10"
             cols="50"
-            id={className}
+            id={textClassName}
             placeholder="Type a post"
-            onChange={this.handleChange}
+            onChange={this.handleChange2}
             value={this.state.text}
           />
           <br />
@@ -77,22 +89,30 @@ class App extends React.Component {
       </div>
     );
   }
-  handleChange(e) {
+  handleChange1(e) {
+    this.setState({ user: e.target.value });
+  }
+  handleChange2(e) {
     this.setState({ text: e.target.value });
   }
   handleSubmit(e) {
     e.preventDefault();
+    if (!this.state.user.length) {
+      console.error("Please enter a correct user at: index.js:react, line 101");
+    }
     if (!this.state.text.length) {
-      console.error("Please enter a post at: index.js:react, line 71");
+      console.error("Please enter a post at: index.js:react, line 104");
       return;
     }
     const newItem = {
       text: this.state.text,
+      user: this.state.user,
       id: performance.now()
     };
     this.setState(state => ({
       items: state.items.concat(newItem),
-      text: ""
+      text: "",
+      user: ""
     }));
   }
 }
@@ -139,9 +159,10 @@ class List extends React.Component {
   render() {
     let { items } = this.props;
     return (
-      <div className="list">
+      <div>
         {items.map(item => (
-          <div key={item.id}>
+          <div className="list" key={item.id}>
+            <h3>{item.user}</h3>
             <p>{item.text}</p>
           </div>
         ))}
@@ -152,7 +173,7 @@ class List extends React.Component {
 
 function RenderWorld(root) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 137)");
+    console.error("No root defined (index.js:react, line 176)");
   }
   ReactDOM.render(
     <NewWorld rxdetail={properties.rxdetail} logThis={properties.myProperty} />,
@@ -161,7 +182,7 @@ function RenderWorld(root) {
 }
 function RenderMainLayout(root, header, content) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 143).");
+    console.error("No root defined (index.js:react, line 185).");
   }
   ReactDOM.render(
     <MainLayout

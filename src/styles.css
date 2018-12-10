@@ -4,19 +4,31 @@
   font-family: "Arial", sans-serif;
 }
 
+::-moz-placeholder {
+  /* Firefox only! */
+  font-family: "Arial", sans-serif;
+}
+
+.right {
+  text-align: right;
+}
 p {
   margin-left: 3px;
   width: 500px;
   word-break: normal;
 }
 #new-post {
-  width: 420px;
   height: 195px;
+}
+#new-post,
+#user {
+  width: 420px;
   border-radius: 10px;
   border: 1px solid darkblue;
 }
 
-#new-post:hover {
+#new-post:hover,
+#user:hover {
   border: 2px solid darkgreen;
 }
 
