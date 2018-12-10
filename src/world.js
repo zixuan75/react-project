@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 
 export default class NewWorld extends React.Component {
   render() {

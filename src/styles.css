@@ -68,7 +68,6 @@ a,
   margin-left: 25px;
   text-decoration: none;
 }
-
 a {
   background-color: lightgreen;
 }
@@ -90,6 +89,9 @@ a:hover {
   border: 1px solid #ccc;
   border-radius: 15px;
   width: 200px;
+}
+.body {
+  background-color: #eee;
 }
 
 .list {
