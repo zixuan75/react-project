@@ -70,6 +70,7 @@ class App extends React.Component {
           <br />
           <button className="btn-300">Save Post</button>
         </form>
+        <br />
         <List items={this.state.items} />
       </div>
     );
@@ -100,19 +101,22 @@ class Text extends React.Component {
       <div>
         <div className="navbar-collector">
           <div className="navbar-items">
-            <br />
-            <div>
+            <div className="navbar-item">
+              <br />
               <a className="navbar-brand" href="#">
-                Home
+                <span>Home</span>
               </a>
+              <br />
+              <br />
             </div>
-            <br />
-            <div>
+            <div className="navbar-item">
+              <br />
               <a className="navbar-brand" href="#new">
-                Page
+                <span>Page</span>
               </a>
+              <br />
+              <br />
             </div>
-            <br />
           </div>
         </div>
         <button className="btn" onClick={this.handleClick}>

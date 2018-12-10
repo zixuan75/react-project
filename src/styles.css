@@ -36,16 +36,30 @@
 
 .navbar-collector {
   background-color: #fffff3;
+  width: 200px;
 }
 
 a.navbar-brand {
+  border-width: 175px;
+  border: 2px solid green;
+  background-color: #eee;
   color: darkblue;
   margin-left: 25px;
+  text-decoration: none;
+}
+div.navbar-item {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+a:hover {
+  color: green;
 }
 
 .navbar-items {
+  display: block;
   border: 1px solid #ccc;
   border-radius: 15px;
+  width: 200px;
 }
 
 .list {
