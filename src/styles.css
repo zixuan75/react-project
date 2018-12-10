@@ -4,6 +4,10 @@
   font-family: "Arial", sans-serif;
 }
 
+.body {
+  background-color: #eee;
+}
+
 ::-moz-placeholder {
   /* Firefox only! */
   font-family: "Arial", sans-serif;
@@ -56,17 +60,22 @@ p {
   width: 200px;
 }
 
-.navbar-brand,
-a {
+a,
+.navbar-brand {
   border-width: 175px;
   background-color: #eee;
   color: darkblue;
   margin-left: 25px;
   text-decoration: none;
 }
+a {
+  background-color: lightgreen;
+}
+
 .navbar-brand {
   border: 2px solid green;
 }
+
 div.navbar-item {
   border: 1px solid #ccc;
   border-radius: 15px;
