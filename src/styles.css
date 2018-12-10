@@ -56,13 +56,16 @@ p {
   width: 200px;
 }
 
-a.navbar-brand {
+.navbar-brand,
+a {
   border-width: 175px;
-  border: 2px solid green;
   background-color: #eee;
   color: darkblue;
   margin-left: 25px;
   text-decoration: none;
+}
+.navbar-brand {
+  border: 2px solid green;
 }
 div.navbar-item {
   border: 1px solid #ccc;
@@ -77,6 +80,9 @@ a:hover {
   border: 1px solid #ccc;
   border-radius: 15px;
   width: 200px;
+}
+.body {
+  background-color: #eee;
 }
 
 .list {

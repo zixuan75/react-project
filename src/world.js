@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 
 export default class NewWorld extends React.Component {
   render() {
@@ -8,4 +9,11 @@ export default class NewWorld extends React.Component {
   }
 }
 
-const WorldHeader = () => <h1>Hello another world</h1>;
+function WorldHeader() {
+  return (
+    <div>
+      <a href="#content">Home</a>
+      <a href="#new">Page</a>
+    </div>
+  );
+}

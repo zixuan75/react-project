@@ -15,7 +15,7 @@ export default class MainLayout extends React.Component {
   render() {
     console.log(this.props.logThis);
     return (
-      <div>
+      <div className="body">
         {this.props.header}
         {this.props.content}
       </div>
@@ -125,7 +125,7 @@ class Text extends React.Component {
           <div className="navbar-items">
             <div className="navbar-item">
               <br />
-              <a className="navbar-brand" href="#">
+              <a className="navbar-brand" href="#content">
                 <span>Home</span>
               </a>
               <br />
