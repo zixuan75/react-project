@@ -2,7 +2,7 @@
 
 Welcome to The React Project!!:2nd_place_medal:
 
-Welcome!
+Hello world.
 
 JSX syntax occured? Remember to start npm using:
 
