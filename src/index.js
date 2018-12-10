@@ -62,6 +62,8 @@ class App extends React.Component {
         />
         <form onSubmit={this.handleSubmit}>
           <textarea
+            rols="10"
+            cols="50"
             id={className}
             placeholder="Type a post"
             onChange={this.handleChange}

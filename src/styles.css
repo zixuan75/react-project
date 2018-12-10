@@ -4,6 +4,10 @@
   font-family: "Arial", sans-serif;
 }
 
+p {
+  width: 500px;
+  word-break: normal;
+}
 #new-post {
   width: 420px;
   height: 195px;
@@ -63,6 +67,7 @@ a:hover {
 }
 
 .list {
+  width: 512px;
   border-radius: 5px;
   border: 2px solid green;
 }
