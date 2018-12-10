@@ -62,7 +62,7 @@ class App extends React.Component {
         */}
         <p className="right">Hello {myuser}!</p>
         <Text
-          message={"This is Todo v.1.0.0. Welcome"}
+          message={"This is Todo v.1.0.4. Welcome"}
           buttonName="Click me!"
         />
         <form onSubmit={this.handleSubmit}>
