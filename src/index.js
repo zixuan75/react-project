@@ -11,6 +11,10 @@ var properties = {
   myProperty: "This is a property",
   rxdetail: "No RX installed."
 };
+function LengthException(message) {
+  this.message = message;
+  this.name = "LengthException";
+}
 export default class MainLayout extends React.Component {
   render() {
     console.log(this.props.logThis);
@@ -18,6 +22,7 @@ export default class MainLayout extends React.Component {
       <div className="body">
         {this.props.header}
         {this.props.content}
+        {this.props.footer}
       </div>
     );
   }
@@ -26,9 +31,14 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hello world</h1>
+        <p class="h1">Hello world</p>
       </div>
     );
+  }
+}
+class Footer extends React.Component {
+  render() {
+    return <p>Thank you for visiting the main page.</p>;
   }
 }
 class App extends React.Component {
@@ -162,7 +172,8 @@ class List extends React.Component {
       <div>
         {items.map(item => (
           <div className="list" key={item.id}>
-            <h3>{item.user}</h3>
+            <p className="h3">{item.user}</p>
+            <br />
             <p>{item.text}</p>
           </div>
         ))}
@@ -176,11 +187,15 @@ function RenderWorld(root) {
     console.error("No root defined (index.js:react, line 176)");
   }
   ReactDOM.render(
-    <NewWorld rxdetail={properties.rxdetail} logThis={properties.myProperty} />,
+    <NewWorld
+      rxinstalled="yes"
+      rxdetail={properties.rxdetail}
+      logThis={properties.myProperty}
+    />,
     root
   );
 }
-function RenderMainLayout(root, header, content) {
+function RenderMainLayout(root, header, content, footer) {
   if (!root) {
     console.error("No root defined (index.js:react, line 185).");
   }
@@ -188,13 +203,14 @@ function RenderMainLayout(root, header, content) {
     <MainLayout
       header={header}
       content={content}
+      footer={footer}
       logThis={properties.myProperty}
     />,
     root
   );
 }
 const rootElement = document.getElementById("root");
-RenderMainLayout(rootElement, <Header />, <App />);
+RenderMainLayout(rootElement, <Header />, <App />, <Footer />);
 
 const worldElement = document.getElementById("world");
 RenderWorld(worldElement);
