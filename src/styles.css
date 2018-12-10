@@ -5,6 +5,7 @@
 }
 
 p {
+  margin-left: 3px;
   width: 500px;
   word-break: normal;
 }
