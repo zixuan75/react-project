@@ -125,7 +125,7 @@ class Text extends React.Component {
           <div className="navbar-items">
             <div className="navbar-item">
               <br />
-              <a className="navbar-brand" href="#">
+              <a className="navbar-brand" href="#content">
                 <span>Home</span>
               </a>
               <br />

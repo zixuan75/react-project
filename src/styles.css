@@ -56,14 +56,23 @@ p {
   width: 200px;
 }
 
-a.navbar-brand {
+a,
+.navbar-brand {
   border-width: 175px;
-  border: 2px solid green;
   background-color: #eee;
   color: darkblue;
   margin-left: 25px;
   text-decoration: none;
 }
+
+a {
+  background-color: lightgreen;
+}
+
+.navbar-brand {
+  border: 2px solid green;
+}
+
 div.navbar-item {
   border: 1px solid #ccc;
   border-radius: 15px;
