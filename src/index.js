@@ -175,12 +175,10 @@ class List extends React.Component {
   render() {
     let { item } = this.props;
     return (
-      <div>
-        <div className="list">
-          <p className="h3">{item.user}</p>
-          <br />
-          <p>{item.text}</p>
-        </div>
+      <div className="list">
+        <p className="h3">{item.user}</p>
+        <br />
+        <p>{item.text}</p>
       </div>
     );
   }
