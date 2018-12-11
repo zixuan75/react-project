@@ -9,7 +9,8 @@ import "./styles.css";
 
 var properties = {
   myProperty: "This is a property",
-  rxdetail: "No RX installed."
+  rxdetail: "RX is installed.",
+  rxinstalled: "yes"
 };
 export default class MainLayout extends React.Component {
   render() {
@@ -104,10 +105,10 @@ class App extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     if (!this.state.user.length) {
-      console.error("Please enter a correct user at: index.js:react, line 101");
+      console.error("Please enter a correct user at: index.js:react, line 108");
     }
     if (!this.state.text.length) {
-      console.error("Please enter a post at: index.js:react, line 104");
+      console.error("Please enter a post at: index.js:react, line 111");
       return;
     }
     const newItem = {
@@ -178,13 +179,16 @@ class List extends React.Component {
   }
 }
 
+// End of main file
+
+// Router configuration
 function RenderWorld(root) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 176)");
+    console.error("No root defined (index.js:react, line 187)");
   }
   ReactDOM.render(
     <NewWorld
-      rxinstalled="yes"
+      rxinstalled={properties.rxinstalles}
       rxdetail={properties.rxdetail}
       logThis={properties.myProperty}
     />,
@@ -193,7 +197,7 @@ function RenderWorld(root) {
 }
 function RenderMainLayout(root, header, content, footer) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 185).");
+    console.error("No root defined (index.js:react, line 200).");
   }
   ReactDOM.render(
     <MainLayout
