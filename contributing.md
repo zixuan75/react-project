@@ -2,8 +2,10 @@
 
 Hello world! Welcome to our project!!
 
-- [ISSUES?](https://github.com/zixuan75/react-project/blob/master/contributing.md#ISSUES)
-- [Can you FIX A ISSUE?](https://github.com/zixuan75/react-project/blob/master/contributing.md#Can-you-FIX-A-ISSUE)
+Table of Contents:
+
+1. [ISSUES?](https://github.com/zixuan75/react-project/blob/master/contributing.md#ISSUES)
+2. [Can you FIX A ISSUE?](https://github.com/zixuan75/react-project/blob/master/contributing.md#Can-you-FIX-A-ISSUE)
 
 ## React
 
