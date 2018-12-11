@@ -8,7 +8,7 @@ export default class NewWorld extends React.Component {
     console.log(this.props.logThis);
     if (this.props.rxinstalled == "no") {
       console.error(this.props.rxdetail);
-      return <h1>NO RX INSTALLED.</h1>;
+      return <h1 className="error">NO RX INSTALLED.</h1>;
     } else {
       return (
         <div>
