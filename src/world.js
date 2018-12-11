@@ -34,7 +34,31 @@ function WorldHeader() {
 }
 
 class WorldBody extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      next: true,
+      status: "X"
+    };
+  }
+  handleClick() {
+    this.setState({
+      next: !this.state.next,
+      status: this.state.next ? "X" : "O"
+    });
+  }
   render() {
-    return <div>Hello world</div>;
+    const status = "Next changer: " + this.state.status;
+    return (
+      <div>
+        Welcome here.
+        <p className="h3 status">{status}</p>
+        <br />
+        <button class="btn" onClick={() => this.handleClick()}>
+          Change It!
+        </button>
+        <br />
+      </div>
+    );
   }
 }
