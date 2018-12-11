@@ -1,10 +1,10 @@
-# :rainbow: The React:laughing: Project: [![Coverage Status](https://coveralls.io/repos/github/zixuan75/react-project/badge.svg)](https://coveralls.io/github/zixuan75/react-project?branch=master)
+# :rainbow: The React:laughing: Project: [![Coverage Status](https://coveralls.io/repos/github/zixuan75/react-project/badge.svg)](https://coveralls.io/github/zixuan75/react-project?branch=master):fire:
 
 Welcome to The React Project!!:2nd_place_medal:
 
 Now, this has REACT in in it, so make sure you have NPM and Nodejs instaled.
 
-JSX syntax occured? Remember to start npm using:
+"Error: JSX syntax occured" at start menu? Remember to start npm using:
 
 > npm start
 
