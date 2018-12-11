@@ -27,7 +27,7 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <p class="h1">Hello world</p>
+        <p className="h1">Hello world</p>
       </div>
     );
   }
