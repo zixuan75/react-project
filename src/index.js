@@ -9,12 +9,9 @@ import "./styles.css";
 
 var properties = {
   myProperty: "This is a property",
-  rxdetail: "No RX installed."
+  rxdetail: "RX is installed.",
+  rxinstalled: "yes"
 };
-function LengthException(message) {
-  this.message = message;
-  this.name = "LengthException";
-}
 export default class MainLayout extends React.Component {
   render() {
     console.log(this.props.logThis);
@@ -31,7 +28,7 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <p class="h1">Hello world</p>
+        <p className="h1">Hello world</p>
       </div>
     );
   }
@@ -84,8 +81,6 @@ class App extends React.Component {
           />
           <br />
           <textarea
-            rols="10"
-            cols="50"
             id={textClassName}
             placeholder="Type a post"
             onChange={this.handleChange2}
@@ -95,9 +90,17 @@ class App extends React.Component {
           <button className="btn-300">Save Post</button>
         </form>
         <br />
-        <List items={this.state.items} />
+        <div>
+          <p>Posts: ({this.state.items.length})</p>
+          {this.getItems()}
+        </div>
       </div>
     );
+  }
+  getItems() {
+    return this.state.items.map(item => {
+      return <List key={item.id} item={item} />;
+    });
   }
   handleChange1(e) {
     this.setState({ user: e.target.value });
@@ -108,10 +111,10 @@ class App extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     if (!this.state.user.length) {
-      console.error("Please enter a correct user at: index.js:react, line 101");
+      console.error("Please enter a correct user at: index.js:react, line 114");
     }
     if (!this.state.text.length) {
-      console.error("Please enter a post at: index.js:react, line 104");
+      console.error("Please enter a post at: index.js:react, line 117");
       return;
     }
     const newItem = {
@@ -155,6 +158,9 @@ class Text extends React.Component {
           {buttonName}
         </button>
         <div>
+          <p>HelloWorld!</p>
+        </div>
+        <div>
           <p>{message}!</p>
         </div>
       </div>
@@ -167,28 +173,27 @@ class Text extends React.Component {
 }
 class List extends React.Component {
   render() {
-    let { items } = this.props;
+    let { item } = this.props;
     return (
-      <div>
-        {items.map(item => (
-          <div className="list" key={item.id}>
-            <p className="h3">{item.user}</p>
-            <br />
-            <p>{item.text}</p>
-          </div>
-        ))}
+      <div className="list">
+        <p className="h3">{item.user}</p>
+        <br />
+        <p>{item.text}</p>
       </div>
     );
   }
 }
 
+// End of main file
+
+// Router configuration
 function RenderWorld(root) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 176)");
+    console.error("No root defined (index.js:react, line 194)");
   }
   ReactDOM.render(
     <NewWorld
-      rxinstalled="yes"
+      rxinstalled={properties.rxinstalled}
       rxdetail={properties.rxdetail}
       logThis={properties.myProperty}
     />,
@@ -197,7 +202,7 @@ function RenderWorld(root) {
 }
 function RenderMainLayout(root, header, content, footer) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 185).");
+    console.error("No root defined (index.js:react, line 207).");
   }
   ReactDOM.render(
     <MainLayout

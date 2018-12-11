@@ -12,8 +12,8 @@ export default class NewWorld extends React.Component {
     } else {
       return (
         <div>
-          <div class="rx rx-component">
-            <div class="rx-header">
+          <div className="rx rx-component">
+            <div className="rx-header">
               <WorldHeader />
             </div>
             <WorldBody />
@@ -34,7 +34,31 @@ function WorldHeader() {
 }
 
 class WorldBody extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      next: true,
+      status: "X"
+    };
+  }
+  handleClick() {
+    this.setState({
+      next: !this.state.next,
+      status: this.state.next ? "X" : "O"
+    });
+  }
   render() {
-    return <div>Hello world</div>;
+    const status = "Next changer: " + this.state.status;
+    return (
+      <div>
+        <div>Welcome here.</div>
+        <input className="squares-i" readOnly value={status} />
+        <p className="allow-margins">[{this.state.status}]</p>
+        <button className="btn" onClick={() => this.handleClick()}>
+          Change It!
+        </button>
+        <br />
+      </div>
+    );
   }
 }
