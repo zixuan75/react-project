@@ -81,8 +81,6 @@ class App extends React.Component {
           />
           <br />
           <textarea
-            rols="10"
-            cols="50"
             id={textClassName}
             placeholder="Type a post"
             onChange={this.handleChange2}
@@ -92,9 +90,19 @@ class App extends React.Component {
           <button className="btn-300">Save Post</button>
         </form>
         <br />
-        <List items={this.state.items} />
+        <div>
+          <p>Posts: {this.state.items.length}</p>
+          {this.getItems()}
+        </div>
       </div>
     );
+  }
+  getItems() {
+    return this.state.items.map(item => (
+      <div>
+        <List key={item.id} item={item} />
+      </div>
+    ));
   }
   handleChange1(e) {
     this.setState({ user: e.target.value });
@@ -152,6 +160,9 @@ class Text extends React.Component {
           {buttonName}
         </button>
         <div>
+          <p>HelloWorld!</p>
+        </div>
+        <div>
           <p>{message}!</p>
         </div>
       </div>
@@ -164,16 +175,14 @@ class Text extends React.Component {
 }
 class List extends React.Component {
   render() {
-    let { items } = this.props;
+    let { item } = this.props;
     return (
       <div>
-        {items.map(item => (
-          <div className="list" key={item.id}>
-            <p className="h3">{item.user}</p>
-            <br />
-            <p>{item.text}</p>
-          </div>
-        ))}
+        <div className="list">
+          <p className="h3">{item.user}</p>
+          <br />
+          <p>{item.text}</p>
+        </div>
       </div>
     );
   }
