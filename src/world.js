@@ -51,10 +51,10 @@ class WorldBody extends React.Component {
     const status = "Next changer: " + this.state.status;
     return (
       <div>
-        Welcome here.
-        <p className="h3 status">{status}</p>
-        <br />
-        <button class="btn" onClick={() => this.handleClick()}>
+        <div>Welcome here.</div>
+        <input className="squares-i" value={status} />
+        <p className="allow-margins">[{this.state.status}]</p>
+        <button className="btn" onClick={() => this.handleClick()}>
           Change It!
         </button>
         <br />

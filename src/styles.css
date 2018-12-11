@@ -4,6 +4,10 @@
   font-family: "Arial", sans-serif;
 }
 
+.squares-i {
+  width: 100px;
+  height: 50px;
+}
 .body {
   background-color: #eee;
 }
@@ -24,6 +28,7 @@ p {
 #new-post {
   height: 195px;
 }
+
 #new-post,
 #user {
   width: 420px;
