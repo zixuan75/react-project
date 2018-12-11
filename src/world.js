@@ -12,8 +12,8 @@ export default class NewWorld extends React.Component {
     } else {
       return (
         <div>
-          <div class="rx rx-component">
-            <div class="rx-header">
+          <div className="rx rx-component">
+            <div className="rx-header">
               <WorldHeader />
             </div>
             <WorldBody />

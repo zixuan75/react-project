@@ -197,7 +197,7 @@ function RenderWorld(root) {
   }
   ReactDOM.render(
     <NewWorld
-      rxinstalled={properties.rxinstalles}
+      rxinstalled={properties.rxinstalled}
       rxdetail={properties.rxdetail}
       logThis={properties.myProperty}
     />,
