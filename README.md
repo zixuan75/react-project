@@ -4,7 +4,7 @@ Welcome to The React Project!!:2nd_place_medal:
 
 Now, this has REACT in in it, so make sure you have NPM and Nodejs instaled.
 
-"JSX syntax occured" at start menu? Remember to start npm using:
+"Error: JSX syntax occured" at start menu? Remember to start npm using:
 
 > npm start
 
