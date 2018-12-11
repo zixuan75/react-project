@@ -98,11 +98,9 @@ class App extends React.Component {
     );
   }
   getItems() {
-    return this.state.items.map(item => (
-      <div>
-        <List key={item.id} item={item} />
-      </div>
-    ));
+    return this.state.items.map(item => {
+      return <List key={item.id} item={item} />;
+    });
   }
   handleChange1(e) {
     this.setState({ user: e.target.value });
