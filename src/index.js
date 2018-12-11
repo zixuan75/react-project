@@ -11,10 +11,6 @@ var properties = {
   myProperty: "This is a property",
   rxdetail: "No RX installed."
 };
-function LengthException(message) {
-  this.message = message;
-  this.name = "LengthException";
-}
 export default class MainLayout extends React.Component {
   render() {
     console.log(this.props.logThis);
