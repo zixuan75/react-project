@@ -9,8 +9,8 @@ import "./styles.css";
 
 var properties = {
   myProperty: "This is a property",
-  rxdetail: "RX is installed.",
-  rxinstalled: "yes"
+  rxdetail: "RX is not installed yet.",
+  rxinstalled: "no"
 };
 export default class MainLayout extends React.Component {
   render() {
@@ -18,7 +18,9 @@ export default class MainLayout extends React.Component {
     return (
       <div className="body">
         {this.props.header}
+        <hr />
         {this.props.content}
+        <hr />
         {this.props.footer}
       </div>
     );
@@ -26,11 +28,7 @@ export default class MainLayout extends React.Component {
 }
 class Header extends React.Component {
   render() {
-    return (
-      <div>
-        <p className="h1">Hello world</p>
-      </div>
-    );
+    return <p className="h1">Hello world</p>;
   }
 }
 class Footer extends React.Component {
@@ -111,10 +109,10 @@ class App extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     if (!this.state.user.length) {
-      console.error("Please enter a correct user at: index.js:react, line 114");
+      console.error("Please enter a correct user at: index.js:react, line 112");
     }
     if (!this.state.text.length) {
-      console.error("Please enter a post at: index.js:react, line 117");
+      console.error("Please enter a post at: index.js:react, line 115");
       return;
     }
     const newItem = {
@@ -189,7 +187,7 @@ class List extends React.Component {
 // Router configuration
 function RenderWorld(root) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 194)");
+    console.error("No root defined (index.js:react, line 190)");
   }
   ReactDOM.render(
     <NewWorld
@@ -197,12 +195,12 @@ function RenderWorld(root) {
       rxdetail={properties.rxdetail}
       logThis={properties.myProperty}
     />,
-    root
+    document.getElementById(root)
   );
 }
 function RenderMainLayout(root, header, content, footer) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 207).");
+    console.error("No root defined (index.js:react, line 203).");
   }
   ReactDOM.render(
     <MainLayout
@@ -211,11 +209,10 @@ function RenderMainLayout(root, header, content, footer) {
       footer={footer}
       logThis={properties.myProperty}
     />,
-    root
+    document.getElementById(root)
   );
 }
-const rootElement = document.getElementById("root");
-RenderMainLayout(rootElement, <Header />, <App />, <Footer />);
 
-const worldElement = document.getElementById("world");
-RenderWorld(worldElement);
+RenderMainLayout("root", <Header />, <App />, <Footer />);
+
+RenderWorld("world");

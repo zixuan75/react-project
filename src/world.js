@@ -57,7 +57,6 @@ class WorldBody extends React.Component {
         <button className="btn" onClick={() => this.handleClick()}>
           Change It!
         </button>
-        <br />
       </div>
     );
   }
