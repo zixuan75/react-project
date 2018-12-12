@@ -9,9 +9,11 @@ import "./styles.css";
 
 var properties = {
   myProperty: "This is a property",
-  rxdetail: "RX is not installed yet.",
-  rxinstalled: "no"
+  rxdetail: "RX is installed.",
+  rxinstalled: "yes"
 };
+
+// Begin of main FILE`~~~~;(J(I(0(U(F(Z))))))
 export default class MainLayout extends React.Component {
   render() {
     console.log(this.props.logThis);
@@ -90,13 +92,16 @@ class App extends React.Component {
         <br />
         <div>
           <p>Posts: ({this.state.items.length})</p>
-          {this.getItems()}
+          {this.renderItems()}
         </div>
       </div>
     );
   }
   getItems() {
-    return this.state.items.map(item => {
+    return this.state.items;
+  }
+  renderItems() {
+    return this.getItems().map(item => {
       return <List key={item.id} item={item} />;
     });
   }
