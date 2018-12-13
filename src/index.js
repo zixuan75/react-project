@@ -124,6 +124,7 @@ class App extends React.Component {
     e.preventDefault();
     if (!this.state.user.length) {
       console.error("Please enter a correct user at: index.js:react, line 126");
+      // return;
     }
     if (!this.state.text.length) {
       console.error("Please enter a post at: index.js:react, line 130");
