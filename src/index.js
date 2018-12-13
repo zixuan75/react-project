@@ -13,7 +13,7 @@ var properties = {
   rxinstalled: "yes"
 };
 
-// Begin of main FILE`~~~~;(J(I(0(U(F(Z))))))
+// Begin of main FILE
 export default class MainLayout extends React.Component {
   render() {
     console.log(this.props.logThis);
@@ -67,7 +67,7 @@ class App extends React.Component {
           Make sure to make a pull request from your repisitory
           to my repository so I can receive the same changes that you made.
         */}
-        <p className="right">Hello {myuser}!</p>
+        {this.renderUser()}
         <Text
           message={"This is Todo v.1.0.4. Welcome"}
           buttonName="Click me!"
@@ -87,7 +87,9 @@ class App extends React.Component {
             value={this.state.text}
           />
           <br />
-          <button className="btn-300">Save Post</button>
+          <button className="btn-300">
+            Save Post #{this.state.items.length + 1}
+          </button>
         </form>
         <br />
         <div>
@@ -96,6 +98,13 @@ class App extends React.Component {
         </div>
       </div>
     );
+  }
+  renderUser() {
+    if (this.state.myuser) {
+      return <p className="right">Hello, {this.state.myuser}</p>;
+    } else {
+      return <p className="right">Hello Stranger</p>;
+    }
   }
   getItems() {
     return this.state.items;
@@ -114,10 +123,10 @@ class App extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     if (!this.state.user.length) {
-      console.error("Please enter a correct user at: index.js:react, line 112");
+      console.error("Please enter a correct user at: index.js:react, line 126");
     }
     if (!this.state.text.length) {
-      console.error("Please enter a post at: index.js:react, line 115");
+      console.error("Please enter a post at: index.js:react, line 129");
       return;
     }
     const newItem = {
@@ -192,7 +201,7 @@ class List extends React.Component {
 // Router configuration
 function RenderWorld(root) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 190)");
+    console.error("No root defined (index.js:react, line 204)");
   }
   ReactDOM.render(
     <NewWorld
@@ -205,7 +214,7 @@ function RenderWorld(root) {
 }
 function RenderMainLayout(root, header, content, footer) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 203).");
+    console.error("No root defined (index.js:react, line 217).");
   }
   ReactDOM.render(
     <MainLayout
