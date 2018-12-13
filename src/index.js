@@ -1,7 +1,7 @@
 // Welcome to the Complex App!
 // Author github:zixuan75 <wzixuanCC@gmail.com>/<wzixuanCC@hotmail.com>
 
-// index.js (version 1.0.4)
+// index.js (version 1.0.7-beta)
 import React from "react";
 import ReactDOM from "react-dom";
 import NewWorld from "./world.js";
@@ -126,7 +126,7 @@ class App extends React.Component {
       console.error("Please enter a correct user at: index.js:react, line 126");
     }
     if (!this.state.text.length) {
-      console.error("Please enter a post at: index.js:react, line 129");
+      console.error("Please enter a post at: index.js:react, line 130");
       return;
     }
     const newItem = {
@@ -201,7 +201,7 @@ class List extends React.Component {
 // Router configuration
 function RenderWorld(root) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 204)");
+    console.error("No root defined (index.js:react, line 205)");
   }
   ReactDOM.render(
     <NewWorld
@@ -214,7 +214,7 @@ function RenderWorld(root) {
 }
 function RenderMainLayout(root, header, content, footer) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 217).");
+    console.error("No root defined (index.js:react, line 218).");
   }
   ReactDOM.render(
     <MainLayout
