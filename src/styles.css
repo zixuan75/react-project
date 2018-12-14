@@ -8,6 +8,13 @@
   color: darkred;
 }
 
+.auto-message {
+  border: 5px solid darkgreen;
+}
+
+.auto-message-display-none {
+  display: none;
+}
 .squares-i {
   width: 100px;
   height: 50px;

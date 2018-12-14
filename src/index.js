@@ -101,7 +101,7 @@ class App extends React.Component {
   }
   renderUser() {
     if (this.state.myuser) {
-      return <p className="right">Hello, {this.state.myuser}</p>;
+      return <p className="right">Hello, {this.state.myuser}!</p>;
     } else {
       return <p className="right">Hello Stranger</p>;
     }
@@ -170,8 +170,10 @@ class Text extends React.Component {
         <button className="btn" onClick={this.handleClick}>
           {buttonName}
         </button>
-        <div>
-          <p>HelloWorld!</p>
+        <div className="auto-message-box">
+          <p className="auto-message auto-message-display-none">
+            React and ReactDOM 16.5.2, ReactScripts 2.1.1@latest
+          </p>
         </div>
         <div>
           <p>{message}!</p>
