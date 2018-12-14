@@ -93,7 +93,7 @@ class App extends React.Component {
         </form>
         <br />
         <div>
-          <p>Posts: ({this.state.items.length})</p>
+          <p>You have {this.state.items.length} posts:</p>
           {this.renderItems()}
         </div>
       </div>
