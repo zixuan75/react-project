@@ -1,7 +1,10 @@
 /* React.boot({
   name: "rx",
   toboot: function(){
-    return render() => React.render("rx, boot").css();
+    function render(){
+      return React.renderData("rx") => (object);
+    };
+    return render() => React.renderData("rx, boot").css("margin", "0");
   }
 })("RX-Scripts");  
 */

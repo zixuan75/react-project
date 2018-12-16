@@ -53,7 +53,7 @@ class WorldBody extends React.Component {
       <div>
         <div>Welcome here.</div>
         <input className="squares-i" readOnly value={status} />
-        <p className="allow-margins">[{this.state.status}]</p>
+        <p className="allow-margins">[{this.state.status}]: Near Winner</p>
         <button className="btn" onClick={() => this.handleClick()}>
           Change It!
         </button>

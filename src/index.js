@@ -13,7 +13,8 @@ var properties = {
   rxinstalled: "yes"
 };
 
-// Begin of main FILE
+// Begin of main file
+// --------------------------
 export default class MainLayout extends React.Component {
   render() {
     console.log(this.props.logThis);
@@ -21,7 +22,10 @@ export default class MainLayout extends React.Component {
       <div className="body">
         {this.props.header}
         <hr />
-        {this.props.content}
+        <div class="main">
+          <p>{this.props.logThis}.</p>
+          {this.props.content}
+        </div>
         <hr />
         {this.props.footer}
       </div>
@@ -123,11 +127,11 @@ class App extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     if (!this.state.user.length) {
-      console.error("Please enter a correct user at: index.js:react, line 126");
+      console.error("Please enter a correct user at: index.js:react, line 130");
       // return;
     }
     if (!this.state.text.length) {
-      console.error("Please enter a post at: index.js:react, line 130");
+      console.error("Please enter a post at: index.js:react, line 134");
       return;
     }
     const newItem = {
@@ -200,11 +204,11 @@ class List extends React.Component {
 }
 
 // End of main file
-
+// -------------------------------------------------
 // Router configuration
 function RenderWorld(root) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 205)");
+    console.error("No root defined (index.js:react, line 211)");
   }
   ReactDOM.render(
     <NewWorld
@@ -217,7 +221,7 @@ function RenderWorld(root) {
 }
 function RenderMainLayout(root, header, content, footer) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 218).");
+    console.error("No root defined (index.js:react, line 224).");
   }
   ReactDOM.render(
     <MainLayout
