@@ -1,2 +1,2 @@
 theme: jekyll-theme-modernist
-modules: react, react-scripts
+build: "script run build"
