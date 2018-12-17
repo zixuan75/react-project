@@ -1,6 +1,6 @@
 {
   "name": "the-complex-react-app",
-  "version": "1.0.7-beta",
+  "version": "1.0.7",
   "description": "A very complex react app with everything. ",
   "keywords": [],
   "main": "src/index.js",

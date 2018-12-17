@@ -1,7 +1,7 @@
 // Welcome to the Complex App!
 // Author github:zixuan75 <wzixuanCC@gmail.com>/<wzixuanCC@hotmail.com>
 
-// index.js (version 1.0.7-beta)
+// index.js (version 1.0.7)
 import React from "react";
 import ReactDOM from "react-dom";
 import NewWorld from "./world.js";
@@ -22,7 +22,7 @@ export default class MainLayout extends React.Component {
       <div className="body">
         {this.props.header}
         <hr />
-        <div class="main">
+        <div className="main">
           <p>{this.props.logThis}.</p>
           {this.props.content}
         </div>
