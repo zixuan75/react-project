@@ -101,8 +101,9 @@ div.navbar-item {
   border-radius: 15px;
 }
 
-a:hover {
-  color: green;
+.the-varchar-value {
+  text-align: center;
+  width: 512px;
 }
 
 .navbar-items {
@@ -125,11 +126,11 @@ a:hover {
 
 @media (min-width: 1024px) {
   .navbar-collector {
-    background-color: #eee;
+    background-color: #ccc;
   }
 
   .navbar-brand {
-    margin-left: 20px;
+    margin-left: 15px;
   }
 }
 

@@ -115,7 +115,14 @@ class App extends React.Component {
   }
   renderItems() {
     return this.getItems().map(item => {
-      return <List key={item.id} item={item} />;
+      var theVarcharValueOfPosts = this.state.items.length;
+      return (
+        <List
+          myVarcharValueForPost={theVarcharValueOfPosts}
+          key={item.id}
+          item={item}
+        />
+      );
     });
   }
   handleChange1(e) {
@@ -127,11 +134,11 @@ class App extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     if (!this.state.user.length) {
-      console.error("Please enter a correct user at: index.js:react, line 130");
+      console.error("Please enter a correct user at: index.js:react, line 137");
       // return;
     }
     if (!this.state.text.length) {
-      console.error("Please enter a post at: index.js:react, line 134");
+      console.error("Please enter a post at: index.js:react, line 141");
       return;
     }
     const newItem = {
@@ -179,8 +186,8 @@ class Text extends React.Component {
             React and ReactDOM 16.5.2, ReactScripts 2.1.1@latest
           </p>
         </div>
-        <div>
-          <p>{message}!</p>
+        <div className="auto-message-box">
+          <p className="auto-message">{message}!</p>
         </div>
       </div>
     );
@@ -194,10 +201,15 @@ class List extends React.Component {
   render() {
     let { item } = this.props;
     return (
-      <div className="list">
-        <p className="h3">{item.user}</p>
-        <br />
-        <p>{item.text}</p>
+      <div className="varchar-list">
+        <div className="the-varchar-value">
+          {this.props.myVarcharValueForPost}
+        </div>
+        <div className="list">
+          <p className="h3">{item.user}</p>
+          <br />
+          <p>{item.text}</p>
+        </div>
       </div>
     );
   }
@@ -208,7 +220,7 @@ class List extends React.Component {
 // Router configuration
 function RenderWorld(root) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 211)");
+    console.error("No root defined (index.js:react, line 223)");
   }
   ReactDOM.render(
     <NewWorld
@@ -221,7 +233,7 @@ function RenderWorld(root) {
 }
 function RenderMainLayout(root, header, content, footer) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 224).");
+    console.error("No root defined (index.js:react, line 236).");
   }
   ReactDOM.render(
     <MainLayout
