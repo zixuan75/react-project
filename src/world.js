@@ -8,12 +8,12 @@ export default class NewWorld extends React.Component {
     console.log(this.props.logThis);
     if (this.props.rxinstalled == "no") {
       console.error(this.props.rxdetail);
-      return <h1>NO RX INSTALLED.</h1>;
+      return <h1 className="error">NO RX INSTALLED.</h1>;
     } else {
       return (
         <div>
-          <div class="rx rx-component">
-            <div class="rx-header">
+          <div className="rx rx-component">
+            <div className="rx-header">
               <WorldHeader />
             </div>
             <WorldBody />
@@ -34,7 +34,30 @@ function WorldHeader() {
 }
 
 class WorldBody extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      next: true,
+      status: "X"
+    };
+  }
+  handleClick() {
+    this.setState({
+      next: !this.state.next,
+      status: this.state.next ? "X" : "O"
+    });
+  }
   render() {
-    return <div>Hello world</div>;
+    const status = "Next changer: " + this.state.status;
+    return (
+      <div>
+        <div>Welcome here.</div>
+        <input className="squares-i" readOnly value={status} />
+        <p className="allow-margins">[{this.state.status}]: Near Winner</p>
+        <button className="btn" onClick={() => this.handleClick()}>
+          Change It!
+        </button>
+      </div>
+    );
   }
 }

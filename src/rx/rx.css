@@ -1,3 +1,15 @@
+/* React.render("rx", {
+  bundle: [ReactData].bundle({ 
+    id: ReactRXQuery.id, 
+    bundler: ReactRXQuery.bundler((data) => {
+      return data.conf().increment() => React.withTracker().jquery().find();
+    }, 
+    jsxBundler: reactScripts.bundler(this.jqueryValue())(data)
+  }),
+  query: this.jquery("$").query(),
+  reverseQuery: this.jqeury("%").query()
+})(world).take("rx-data").run();
+*/
 .rx,
 .rx-component {
   margin-left: 0px;

@@ -1,13 +1,13 @@
 {
   "name": "the-complex-react-app",
-  "version": "1.0.4",
-  "description": "A very complex react app with peverything. ",
+  "version": "1.0.7-beta",
+  "description": "A very complex react app with everything. ",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "react": "16.5.2",
     "react-dom": "16.5.2",
-    "react-scripts": "2.0.3"
+    "react-scripts": "2.1.1"
   },
   "devDependencies": {},
   "scripts": {

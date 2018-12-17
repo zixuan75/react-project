@@ -1,3 +1,16 @@
+/* React.boot({
+  name: "rx",
+  toboot: function(){
+    function render(){
+      return React.renderData("rx") => (object);
+    };
+    return render() => React.renderData("rx, boot").css("margin", "0");
+  }
+})("RX-Scripts");  
+*/
 .allow-margins {
   margin-left: 5px;
+}
+.no-margins {
+  margin: 0px 0px 0px 0px;
 }

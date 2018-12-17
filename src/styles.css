@@ -4,6 +4,22 @@
   font-family: "Arial", sans-serif;
 }
 
+.error {
+  color: darkred;
+}
+
+.auto-message {
+  border: 5px solid darkgreen;
+}
+
+.auto-message-display-none {
+  display: none;
+}
+.squares-i {
+  width: 100px;
+  height: 50px;
+}
+
 .body {
   background-color: #eee;
 }
@@ -16,14 +32,17 @@
 .right {
   text-align: right;
 }
+
 p {
   margin-left: 3px;
   width: 500px;
   word-break: normal;
 }
+
 #new-post {
   height: 195px;
 }
+
 #new-post,
 #user {
   width: 420px;
@@ -68,6 +87,7 @@ a,
   margin-left: 25px;
   text-decoration: none;
 }
+
 a {
   background-color: lightgreen;
 }
@@ -80,6 +100,7 @@ div.navbar-item {
   border: 1px solid #ccc;
   border-radius: 15px;
 }
+
 a:hover {
   color: green;
 }
@@ -90,6 +111,7 @@ a:hover {
   border-radius: 15px;
   width: 200px;
 }
+
 .body {
   background-color: #eee;
 }
@@ -110,13 +132,19 @@ a:hover {
     margin-left: 20px;
   }
 }
+
 p.h1 {
   font-size: 35px;
 }
+
 p.h3 {
   font-size: 20px;
   margin-top: 0px;
   margin-bottom: -15px;
   margin-left: 0px;
   margin-right: 0px;
+}
+
+.main {
+  padding-left: 1px;
 }
