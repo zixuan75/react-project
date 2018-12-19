@@ -220,7 +220,7 @@ class List extends React.Component {
 // Router configuration
 function RenderWorld(root) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 223)");
+    throw new Error("No root defined", "index.js", 223);
   }
   ReactDOM.render(
     <NewWorld
@@ -233,7 +233,7 @@ function RenderWorld(root) {
 }
 function RenderMainLayout(root, header, content, footer) {
   if (!root) {
-    console.error("No root defined (index.js:react, line 236).");
+    throw new Error("No root defined", "index.js", 236);
   }
   ReactDOM.render(
     <MainLayout
