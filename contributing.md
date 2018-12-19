@@ -1,5 +1,6 @@
 # Welcome to The React Project!
 
+This is the Winter Brake of this project and will never be releasing more versions until April 2019.
 Hello world! Welcome to our project!!
 
 Table of Contents:
