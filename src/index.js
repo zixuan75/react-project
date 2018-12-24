@@ -7,6 +7,7 @@ import ReactDOM from "react-dom";
 import NewWorld from "./world.js";
 import "./styles.css";
 
+// Properties
 var properties = {
   myProperty: "This is a property",
   rxdetail: "RX is installed.",
@@ -203,7 +204,7 @@ class List extends React.Component {
     return (
       <div className="varchar-list">
         <div className="the-varchar-value">
-          Submit value of {this.props.myVarcharValueForPost}
+          Submit value of {this.props.myVarcharValueForPost} on each one
         </div>
         <div className="list">
           <p className="h3">{item.user}</p>
