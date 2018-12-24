@@ -18,11 +18,16 @@ Then replace the files and folder that you've deleted with all of the files in t
 
 Last, delete unneccsary files and folders on the directory by running these commands:
 
-> rm -rf source\*
+> rm -rf source*
+>
 > rm -rf .deal .github
+>
 > rm -rf PULL_REQUEST_TEMPLATE.md
+>
 > rm -rf LICENSE 0a.png
-> rm -rf \_config.yml
+>
+> rm -rf _config.yml
+>
 > rm -rf contributing.md
 
 Then, you can start npm using:
