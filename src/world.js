@@ -55,7 +55,8 @@ class WorldBody extends React.Component {
           <p class="h1">Welcome here!</p>
           <p>
             If you feel like a world, you can click on it as many times as you
-            want to guess who will be the winner: you (X) or your friend O.
+            want to guess who will be the winner: you (X) or your friend (O) so
+            you can see who has the most energy of React + JSX.
           </p>
         </div>
         <input className="squares-i" readOnly value={status} />
