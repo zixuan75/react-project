@@ -166,6 +166,8 @@ class Text extends React.Component {
             alt="Lynx Car at Tremont Station"
           />
         </a>
+        <br />
+        <br />
         <div className="navbar-collector">
           <div className="navbar-items">
             <div className="navbar-item">

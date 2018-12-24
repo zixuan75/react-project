@@ -52,7 +52,7 @@ class WorldBody extends React.Component {
     return (
       <div>
         <div>
-          <p class="h1">Welcome here!</p>
+          <p className="h1">Welcome here!</p>
           <p>
             <img
               id="blue-line"
