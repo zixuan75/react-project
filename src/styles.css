@@ -4,6 +4,9 @@
   font-family: "Arial", sans-serif;
 }
 
+.jumbotron {
+  border: 3px solid green;
+}
 .error {
   color: darkred;
 }

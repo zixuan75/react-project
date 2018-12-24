@@ -51,7 +51,7 @@ class WorldBody extends React.Component {
     const status = "Next changer: " + this.state.status;
     return (
       <div>
-        <div>
+        <div className="jumbotron">
           <p className="h1">Welcome here!</p>
           <p>
             <img
