@@ -54,12 +54,18 @@ class WorldBody extends React.Component {
         <div>
           <p class="h1">Welcome here!</p>
           <p>
+            <img
+              id="blue-line"
+              src="https://upload.wikimedia.org/wikipedia/commons/b/bd/LYNX_Car_104_at_TremontStation.jpg"
+              width="175"
+            />
             If you feel like a world, you can click on it as many times as you
             want to guess who will be the winner: you (or X as displayed in the
-            game) or your friend (or O as displayed in your game) so you can see
+            game) or your friend (or O as displayed in the game) so you can see
             who has the most energy of React + JSX.
           </p>
         </div>
+        <br />
         <input className="squares-i" readOnly value={status} />
         <p className="allow-margins">[{this.state.status}]: Near Winner</p>
         <button className="btn" onClick={() => this.handleClick()}>

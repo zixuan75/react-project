@@ -39,6 +39,10 @@ p {
   word-break: normal;
 }
 
+#blue-line {
+  float: left;
+  margin-right: 10px;
+}
 #new-post {
   height: 195px;
 }
