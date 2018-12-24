@@ -203,7 +203,7 @@ class List extends React.Component {
     return (
       <div className="varchar-list">
         <div className="the-varchar-value">
-          {this.props.myVarcharValueForPost}
+          Submit value of {this.props.myVarcharValueForPost}
         </div>
         <div className="list">
           <p className="h3">{item.user}</p>
