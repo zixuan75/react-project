@@ -51,7 +51,13 @@ class WorldBody extends React.Component {
     const status = "Next changer: " + this.state.status;
     return (
       <div>
-        <div>Welcome here.</div>
+        <div>
+          <p class="h1">Welcome here!</p>
+          <p>
+            If you feel like a world, you can click on it as many times as you
+            want to guess who will be the winner: you (X) or your friend O.
+          </p>
+        </div>
         <input className="squares-i" readOnly value={status} />
         <p className="allow-margins">[{this.state.status}]: Near Winner</p>
         <button className="btn" onClick={() => this.handleClick()}>
