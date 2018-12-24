@@ -59,10 +59,10 @@ class WorldBody extends React.Component {
               src="https://upload.wikimedia.org/wikipedia/commons/b/bd/LYNX_Car_104_at_TremontStation.jpg"
               width="175"
             />
-            If you feel like a world, you can click on it as many times as you
-            want to guess who will be the winner: you (or X as displayed in the
-            game) or your friend (or O as displayed in the game) so you can see
-            who has the most energy of React + JSX.
+            If you feel like a world, you can click on "Change It!" as many
+            times as you want to guess who will be the winner: you (or X as
+            displayed in the game) or your friend (or O as displayed in the
+            game) so you can see who has the most energy of React + JSX.
           </p>
         </div>
         <br />
