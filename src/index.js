@@ -159,6 +159,13 @@ class Text extends React.Component {
     let { message, buttonName } = this.props;
     return (
       <div>
+        <a href="#content">
+          <img
+            width="100"
+            src="https://upload.wikimedia.org/wikipedia/commons/b/bd/LYNX_Car_104_at_TremontStation.jpg"
+            alt="Lynx Car at Tremont Station"
+          />
+        </a>
         <div className="navbar-collector">
           <div className="navbar-items">
             <div className="navbar-item">
