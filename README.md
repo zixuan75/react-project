@@ -4,6 +4,8 @@ Welcome to The React Project!!:2nd_place_medal:
 
 ## Run code
 
+### Run without learning JSX
+
 First of all, install NPM. Make sure you have NodeJS 6.0.0 or higher, and NPM 5.2.0 or higher.
 
 Then run:
@@ -18,7 +20,7 @@ Then replace the files and folder that you've deleted with all of the files in t
 
 Last, delete unneccsary files and folders on the directory by running these commands:
 
-> rm -rf source*
+> rm -rf source\*
 >
 > rm -rf .deal .github
 >
@@ -26,7 +28,7 @@ Last, delete unneccsary files and folders on the directory by running these comm
 >
 > rm -rf LICENSE 0a.png
 >
-> rm -rf _config.yml
+> rm -rf \_config.yml
 >
 > rm -rf contributing.md
 
@@ -35,6 +37,10 @@ Then, you can start npm using:
 > npm start
 
 And then go to https://localhost:8000 and the app should start.
+
+### JSX learning
+
+If you're interested in learning JSX, you might check out my wiki (which is actually not complete) [here](https://github.com/zixuan75/react-project/wiki). Now, this tutorial might not work for you, but I recommend it so much that you should take it if you do not already know JSX and React. Also, the tutorial is not yet complete, so this tutorial is only a half of complete and advanced React which I will not talk about here.
 
 ## Remember
 
