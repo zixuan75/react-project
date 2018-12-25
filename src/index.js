@@ -14,8 +14,10 @@ var properties = {
   rxinstalled: "yes"
 };
 
-// Begin of main file
-// --------------------------
+/* 
+  Begin of main file
+  -------------------------------------------------------------
+*/
 export default class MainLayout extends React.Component {
   render() {
     console.log(this.props.logThis);
@@ -114,7 +116,8 @@ class App extends React.Component {
     }
   }
   getItems() {
-    return this.state.items;
+    var { items } = this.state;
+    return items;
   }
   renderItems() {
     return this.getItems().map(item => {
@@ -227,9 +230,11 @@ class List extends React.Component {
   }
 }
 
-// End of main file
-// -------------------------------------------------
-// Router configuration
+/* 
+  End of main file
+  ------------------------------------------------------------
+  Router configuration
+*/
 function RenderWorld(root) {
   if (!root) {
     throw new Error("No root defined", "index.js", 223);
