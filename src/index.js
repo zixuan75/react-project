@@ -59,7 +59,7 @@ class App extends React.Component {
   render() {
     let textClassName = "new-post";
     let userClassName = "user";
-    let { myuser } = this.state;
+    // let { myuser } = this.state;
     return (
       <div>
         {/* 
