@@ -40,13 +40,15 @@ And then go to https://localhost:8000 and the app should start.
 
 ### JSX learning
 
-If you're interested in learning JSX, you might check out my wiki (which is actually not complete) [here](https://github.com/zixuan75/react-project/wiki). Now, this tutorial might not work for you, but I recommend it so much that you should take it if you do not already know JSX and React. Also, the tutorial is not yet complete, so this tutorial is only a half of complete and advanced React which I will not talk about here.
+**This is completely not required for this tutorial.**
+
+If you're interested in learning JSX, you might check out our wiki (which is actually not complete yet) [here](https://github.com/zixuan75/react-project/wiki). Now, this tutorial might not work for you, but I recommend it so much that you should take it if you do not already know JSX and React. Also, the tutorial is not yet complete, so this tutorial is only a half of complete and advanced React which I will add later.
 
 ## Remember
 
 Remember, we're using React, so it's going to render those components with the id="component name" unless if you have React Devtools where you can look at the jsx components.
 
-(No React Devtools)
+No React Devtools:
 
 ```html
 <div id="App">
@@ -54,7 +56,7 @@ Remember, we're using React, so it's going to render those components with the i
 </div>
 ```
 
-(React Devtools)
+With React Devtools:
 
 ```jsx
 <App>
