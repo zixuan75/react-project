@@ -79,6 +79,7 @@ class App extends React.Component {
         />
         <form onSubmit={this.handleSubmit}>
           <input
+            aria-label="User name"
             placeholder="User name"
             id={userClassName}
             value={this.state.user}
@@ -86,6 +87,7 @@ class App extends React.Component {
           />
           <br />
           <textarea
+            aria-label="Type a post"
             id={textClassName}
             placeholder="Type a post"
             onChange={this.handleChange2}
