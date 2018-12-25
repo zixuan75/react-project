@@ -18,7 +18,7 @@ So then delete all of the files and folders in the my-app directory be sure not 
 
 Then replace the files and folder that you've deleted with all of the files in this project.
 
-Last, delete unneccsary files and folders on the directory by running these commands:
+Last, delete unnecessary files and folders on the directory by running these commands:
 
 > rm -rf source\*
 >
@@ -31,6 +31,8 @@ Last, delete unneccsary files and folders on the directory by running these comm
 > rm -rf \_config.yml
 >
 > rm -rf contributing.md
+>
+> rm -rf src/README.md
 
 Then, you can start npm using:
 
