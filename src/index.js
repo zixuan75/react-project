@@ -74,7 +74,6 @@ class App extends React.Component {
           Make sure to make a pull request from your repisitory
           to my repository so I can receive the same changes that you made.
         */}
-        {this.renderUser()}
         <Text
           message={"This is Todo v.1.0.4. Welcome"}
           buttonName="Click me!"
@@ -107,13 +106,6 @@ class App extends React.Component {
         </div>
       </div>
     );
-  }
-  renderUser() {
-    if (this.state.myuser) {
-      return <p className="right">Hello, {this.state.myuser}!</p>;
-    } else {
-      return <p className="right">Hello Stranger</p>;
-    }
   }
   getItems() {
     var { items } = this.state;
@@ -160,10 +152,24 @@ class App extends React.Component {
   }
 }
 class Text extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      myuser: "zixuan"
+    };
+  }
+  renderUser() {
+    if (this.state.myuser) {
+      return <p className="right">Hello {this.state.myuser}</p>;
+    } else {
+      return <p className="right">Hello Stranger</p>;
+    }
+  }
   render() {
     let { message, buttonName } = this.props;
     return (
       <div>
+        {this.renderUser()}
         <a href="#content">
           <img
             width="100"
