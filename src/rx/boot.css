@@ -14,3 +14,7 @@
 .no-margins {
   margin: 0px 0px 0px 0px;
 }
+
+.jumbotron {
+  background-color: lightgray;
+}

@@ -16,7 +16,7 @@ export default class NewWorld extends React.Component {
             <div className="rx-header">
               <WorldHeader />
             </div>
-            <WorldBody />
+            <WorldBody alt="Lynx Blue Line at Tremont Station" />
           </div>
         </div>
       );
@@ -58,6 +58,7 @@ class WorldBody extends React.Component {
               id="blue-line"
               src="https://upload.wikimedia.org/wikipedia/commons/b/bd/LYNX_Car_104_at_TremontStation.jpg"
               width="175"
+              alt={this.props.alt}
             />
             If you feel like a world, you can click on "Change It!" as many
             times as you want to guess who will be the winner: you (or X as
