@@ -44,9 +44,19 @@ And then go to https://localhost:8000 and the app should start.
 
 If you're interested in learning JSX, you might check out our wiki (which is actually not complete yet) [here](https://github.com/zixuan75/react-project/wiki). Now, this tutorial might not work for you, but I recommend it so much that you should take it if you do not already know JSX and React. Also, the tutorial is not yet complete, so this tutorial is only a half of complete and advanced React which I will add later.
 
+You just don't need to clone this repository to learn JSX.
+
+(You can also learn at [the official React.js website](https://reactjs.org).)
+
+#### Versions needed
+
+You need NPM >= 5.2.0 and Node.js >= 6.0.0 to learn JSX.
+
+If you don't have those versions installed yet, you can just upgrade your old NPM and/or Node.js to learn JSX here at this repository.
+
 ## Remember
 
-Remember, we're using React, so it's going to render those components with the id="component name" unless if you have React Devtools where you can look at the jsx components.
+Remember, we're using React, so it's going to render those components with the id="component name" unless if you have React Devtools where you can look at the JSX components.
 
 No React Devtools:
 
