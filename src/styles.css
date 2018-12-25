@@ -22,6 +22,10 @@
   width: 100px;
   height: 50px;
 }
+.react-project-heading {
+  font-family: cursive;
+  text-align: center;
+}
 
 .body {
   background-color: #eee;
