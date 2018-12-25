@@ -199,7 +199,7 @@ class Text extends React.Component {
             </div>
           </div>
         </div>
-        <button className="btn" onClick={this.handleClick}>
+        <button className="btn" onClick={() => this.handleClick()}>
           {buttonName}
         </button>
         <div className="auto-message-box">
