@@ -4,7 +4,7 @@
     function render(){
       var rxReact=React.render(
         <div>
-          Welcome to RX.React
+          Welcome to RX.React!
         </div>
       );
       return React.renderData("rx") => {
