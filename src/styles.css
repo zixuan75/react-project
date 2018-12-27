@@ -3,7 +3,10 @@
   margin: 0px;
   font-family: "Arial", sans-serif;
 }
-
+.post-number-value {
+  border: 10px solid pink;
+  width: 130px;
+}
 .jumbotron {
   border: 3px solid green;
 }
