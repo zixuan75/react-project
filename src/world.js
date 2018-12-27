@@ -6,9 +6,14 @@ import "./rx/boot.css";
 export default class NewWorld extends React.Component {
   render() {
     console.log(this.props.logThis);
-    if (this.props.rxinstalled == "no") {
+    if (this.props.rxinstalled === "no") {
       console.error(this.props.rxdetail);
-      return <h1 className="error">NO RX INSTALLED.</h1>;
+      return (
+        <div className="jumbotron">
+          <h1 className="error">NO RX INSTALLED.</h1>
+          <p>Please install RX to function the classes correctly.</p>
+        </div>
+      );
     } else {
       return (
         <div>
