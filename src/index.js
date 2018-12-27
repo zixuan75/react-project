@@ -65,7 +65,7 @@ class App extends React.Component {
     return (
       <div>
         {/* 
-          Welcome, everybody. 
+          Hello and welcome here, everybody. 
           You're free to edit this file anytime at my github repository
           https://github.com/zixuan75/react-project by forking
           the project and making some commits.
