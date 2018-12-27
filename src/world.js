@@ -60,9 +60,10 @@ class WorldBody extends React.Component {
               width="175"
               alt={this.props.alt}
             />
-            If you feel like a world, you can close your eyes and click on
-            "Change It!" as many times as you want to guess who will be the
-            winner: you (or X as displayed in the game) or your friend (or O as
+            If you feel like a world, you can just close your eyes and click on
+            the blue <span className="button-structure">"Change It!"</span>{" "}
+            button as many times as you want to guess who will be the winner:
+            you (or X as displayed in the game) or your friend (or O as
             displayed in the game) so you can see who has the most energy of
             React + JSX.
           </p>

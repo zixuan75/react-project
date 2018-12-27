@@ -21,6 +21,7 @@
 .squares-i {
   width: 100px;
   height: 50px;
+  border: 5px solid blue;
 }
 .react-project-heading {
   font-family: cursive;
@@ -166,4 +167,9 @@ p.h3 {
 
 .main {
   padding-left: 1px;
+}
+
+.button-structure {
+  background-color: darkblue;
+  color: white;
 }

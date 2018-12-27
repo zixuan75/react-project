@@ -4,7 +4,10 @@
     bundler: ReactRXQuery.bundler((data) => {
       return data.conf().increment() => React.withTracker().jquery().find();
     }, 
-    jsxBundler: reactScripts.bundler(this.jqueryValue())(data)
+    jsxBundler: reactScripts.bundler(this.jqueryValue())(data),
+    bundle: React.render(
+      return React.getData("boot");
+    )(this.id);
   }),
   query: this.jquery("$").query(),
   reverseQuery: this.jqeury("%").query()

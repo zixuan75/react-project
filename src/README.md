@@ -1,3 +1,5 @@
 # Hi there!
 
 This is the file where our React files and stylesheets go. You'll see no connection between those React files and the HTML file because this is runned by React-Scripts. Now, NPM React-Scripts does not use script links because they already know which one to connect to from the public directory: the index.js in the src directory!
+
+The page is particularly stylish because we have a lot of CSS rules. That's why you see it looking like a complete webpage. Also remember, "class" is now "className" because class is a reserved word in JS. This is pretty confusing for new React users. Those questions like "Why is it a reserved word" and "What really are reserved words" just pop up if you don't have a advanced JavaScript mashup :laughing:.

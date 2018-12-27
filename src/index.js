@@ -101,11 +101,26 @@ class App extends React.Component {
         </form>
         <br />
         <div>
-          <p>You have {this.state.items.length} posts:</p>
+          {this.renderNumberOfPosts()}
           {this.renderItems()}
         </div>
       </div>
     );
+  }
+  renderNumberOfPosts() {
+    if (this.state.items.length === 1) {
+      return (
+        <p className="post-number-value">
+          You have {this.state.items.length} post.
+        </p>
+      );
+    } else {
+      return (
+        <p className="post-number-value">
+          You have {this.state.items.length} posts.
+        </p>
+      );
+    }
   }
   getItems() {
     var { items } = this.state;
@@ -132,11 +147,11 @@ class App extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     if (!this.state.user.length) {
-      console.error("Please enter a correct user at: index.js:react, line 135");
+      console.error("Please enter a correct user at: index.js:react, line 150");
       // return;
     }
     if (!this.state.text.length) {
-      console.error("Please enter a post at: index.js:react, line 139");
+      console.error("Please enter a post at: index.js:react, line 154");
       return;
     }
     const newItem = {
@@ -245,7 +260,7 @@ class List extends React.Component {
 */
 function RenderWorld(root) {
   if (!root) {
-    throw new Error("No root defined", "index.js", 248);
+    throw new Error("No root defined", "index.js", 263);
   }
   ReactDOM.render(
     <NewWorld
@@ -258,7 +273,7 @@ function RenderWorld(root) {
 }
 function RenderMainLayout(root, header, content, footer) {
   if (!root) {
-    throw new Error("No root defined", "index.js", 261);
+    throw new Error("No root defined", "index.js", 276);
   }
   ReactDOM.render(
     <MainLayout

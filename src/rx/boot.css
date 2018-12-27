@@ -2,7 +2,15 @@
   name: "rx",
   toboot: function(){
     function render(){
-      return React.renderData("rx") => (object);
+      var rxReact=React.render(
+        <div>
+          Welcome to RX.React
+        </div>
+      );
+      return React.renderData("rx") => {
+        get rxReact from React.data(rxReact).renderJSX();
+        return ("object", {var:rxReact.structure()});
+      };
     };
     return render() => React.renderData("rx, boot").css("margin", "0");
   }
