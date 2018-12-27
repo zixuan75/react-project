@@ -2,8 +2,6 @@
 
 Welcome to The React Project!!:2nd_place_medal:
 
-![alt text](Screenshot_2018-12-06\ React\ App Photo of v1.0.0)
-
 ## Run code
 
 ### Run without learning JSX
