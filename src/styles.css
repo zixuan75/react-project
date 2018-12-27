@@ -25,6 +25,9 @@
 .react-project-heading {
   font-family: cursive;
   text-align: center;
+  background-color: #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .body {
