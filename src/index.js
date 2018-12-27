@@ -199,7 +199,10 @@ class Text extends React.Component {
             </div>
           </div>
         </div>
-        <button className="btn" onClick={() => this.handleClick()}>
+        <button
+          className="btn"
+          onClick={() => this.handleClick("Hello world!")}
+        >
           {buttonName}
         </button>
         <div className="auto-message-box">
@@ -213,9 +216,8 @@ class Text extends React.Component {
       </div>
     );
   }
-  handleClick() {
-    let variable = "Hello world";
-    alert(variable);
+  handleClick(message) {
+    alert(message);
   }
 }
 class List extends React.Component {
