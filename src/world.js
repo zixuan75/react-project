@@ -70,7 +70,11 @@ class WorldBody extends React.Component {
         </div>
         <br />
         <input className="squares-i" readOnly value={status} />
-        <p className="allow-margins">[{this.state.status}]: Near Winner</p>
+        <p className="allow-margins">
+          [{this.state.status}]: Near Winner (Please be careful of the "near".
+          After you stop clicking it, the number shown in the box above is the
+          real winner.)
+        </p>
         <button className="btn" onClick={() => this.handleClick()}>
           Change It!
         </button>
