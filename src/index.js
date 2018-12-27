@@ -132,11 +132,11 @@ class App extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     if (!this.state.user.length) {
-      console.error("Please enter a correct user at: index.js:react, line 137");
+      console.error("Please enter a correct user at: index.js:react, line 135");
       // return;
     }
     if (!this.state.text.length) {
-      console.error("Please enter a post at: index.js:react, line 141");
+      console.error("Please enter a post at: index.js:react, line 139");
       return;
     }
     const newItem = {
@@ -225,9 +225,9 @@ class List extends React.Component {
     let { item } = this.props;
     return (
       <div className="varchar-list">
-        <div className="the-varchar-value">
+        {/* <div className="the-varchar-value">
           Submit value of {this.props.myVarcharValueForPost} on each one
-        </div>
+        </div> */}
         <div className="list">
           <p className="h3">{item.user}</p>
           <br />
@@ -245,7 +245,7 @@ class List extends React.Component {
 */
 function RenderWorld(root) {
   if (!root) {
-    throw new Error("No root defined", "index.js", 223);
+    throw new Error("No root defined", "index.js", 248);
   }
   ReactDOM.render(
     <NewWorld
@@ -258,7 +258,7 @@ function RenderWorld(root) {
 }
 function RenderMainLayout(root, header, content, footer) {
   if (!root) {
-    throw new Error("No root defined", "index.js", 236);
+    throw new Error("No root defined", "index.js", 261);
   }
   ReactDOM.render(
     <MainLayout
