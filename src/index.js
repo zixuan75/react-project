@@ -74,10 +74,7 @@ class App extends React.Component {
           Make sure to make a pull request from your repisitory
           to my repository so I can receive the same changes that you made.
         */}
-        <Text
-          message={"This is Todo v.1.0.4. Welcome"}
-          buttonName="Click me!"
-        />
+        <Text message="This is Todo v.1.0.4. Welcome" buttonName="Click me!" />
         <form onSubmit={this.handleSubmit}>
           <input
             aria-label="User name"
