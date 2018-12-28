@@ -11,3 +11,9 @@ Welcome to the Blog. 1.0.7-beta released a few days ago. Supporting is now avail
 ### Reports
 
 Pull request templates is on the go by now. When? After 1.0.7. Also, links to CodeSandbox will be available after the landmark of 1.0.7 arriving.
+
+## 2.0.3, will be here in about 4 months!!
+
+2.0.3 is coming in 4 months. (Still a long time.)
+
+In 4 months in April, we'll be releasing 2.0.3.
