@@ -71,9 +71,11 @@ No React Devtools:
 With React Devtools:
 
 ```jsx
-<App>
-  <Text>
-    <p>...</p>
-  </Text>
-</App>
+<div>
+  <App>
+    <Text>
+      <p>...</p>
+    </Text>
+  </App>
+</div>
 ```
