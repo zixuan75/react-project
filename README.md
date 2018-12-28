@@ -10,7 +10,9 @@ First of all, install NPM. Make sure you have NodeJS 6.0.0 or higher, and NPM 5.
 
 Then run:
 
-> npx create-react-app my-app
+```
+$ npx create-react-app my-app
+```
 
 Next, extract the file you downloaded from my repository.
 
@@ -20,19 +22,15 @@ Then replace the files and folder that you've deleted with all of the files in t
 
 Last, delete unnecessary files and folders on the directory by running these commands:
 
-> rm -rf source\*
->
-> rm -rf .deal .github
->
-> rm -rf PULL_REQUEST_TEMPLATE.md
->
-> rm -rf LICENSE 0a.png
->
-> rm -rf \_config.yml
->
-> rm -rf contributing.md
->
-> rm -rf src/README.md
+```
+$ rm -rf source\*
+$ rm -rf .deal .github
+$ rm -rf PULL_REQUEST_TEMPLATE.md
+$ rm -rf LICENSE 0a.png
+$ rm -rf \_config.yml
+$ rm -rf contributing.md
+$ rm -rf src/README.md
+```
 
 Then, you can start npm using:
 
