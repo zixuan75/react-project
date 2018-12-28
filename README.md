@@ -60,7 +60,7 @@ If you don't have those versions installed yet, you can just upgrade your old NP
 
 Remember, we're using React, so it's going to render those components with the id="component name" unless if you have React Devtools where you can look at the JSX components.
 
-No React Devtools:
+With no React Devtools:
 
 ```html
 <div id="App">
