@@ -21,7 +21,10 @@ export default class NewWorld extends React.Component {
             <div className="rx-header">
               <WorldHeader />
             </div>
-            <WorldBody alt="Lynx Blue Line at Tremont Station" />
+            <WorldBody
+              alt="Lynx Blue Line at Tremont Station"
+              buttonName="Change it!"
+            />
           </div>
         </div>
       );
@@ -54,6 +57,7 @@ class WorldBody extends React.Component {
   }
   render() {
     const status = "Next changer: " + this.state.status;
+    let { buttonName } = this.props;
     return (
       <div>
         <div className="jumbotron">
@@ -66,7 +70,7 @@ class WorldBody extends React.Component {
               alt={this.props.alt}
             />
             If you feel like a world, you can just close your eyes and click on
-            the blue <span className="button-structure">"Change It!"</span>{" "}
+            the blue <span className="button-structure">{buttonName}</span>{" "}
             button as many times as you want to guess who will be the winner:
             you (or X as displayed in the game) or your friend (or O as
             displayed in the game) so you can see who has the most energy of
@@ -81,7 +85,7 @@ class WorldBody extends React.Component {
           real winner.)
         </p>
         <button className="btn" onClick={() => this.handleClick()}>
-          Change It!
+          {buttonName}
         </button>
       </div>
     );
