@@ -186,7 +186,7 @@ class Text extends React.Component {
           <img
             width="100"
             src="https://upload.wikimedia.org/wikipedia/commons/b/bd/LYNX_Car_104_at_TremontStation.jpg"
-            alt="Lynx Car at Tremont Station"
+            alt="Lynx Car #104 at Tremont Station"
           />
         </a>
         <br />
