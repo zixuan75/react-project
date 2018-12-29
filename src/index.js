@@ -105,7 +105,8 @@ class App extends React.Component {
 		);
 	}
 	renderNumberOfPosts() {
-		if (this.state.items.length === 1) {
+		var { length } = this.state.items;
+		if (length === 1) {
 			return (
 				<p className="post-number-value">
 					You have {this.state.items.length} post.

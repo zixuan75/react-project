@@ -59,7 +59,7 @@ p {
 	margin-right: 10px;
 }
 #new-post {
-	height: 195px;
+	height: 200px;
 }
 
 #new-post,
@@ -142,7 +142,7 @@ div.navbar-item {
 
 .list {
 	text-align: center;
-	width: 512px;
+	width: 461px;
 	border-radius: 5px;
 	border: 2px solid green;
 }
