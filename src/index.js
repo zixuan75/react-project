@@ -145,11 +145,11 @@ class App extends React.Component {
 	handleSubmit(e) {
 		e.preventDefault();
 		if (!this.state.user.length) {
-			console.error("Please enter a correct user at: index.js:react, line 150");
+			console.error("Please enter a correct user at: index.js:react, line 148");
 			// return;
 		}
 		if (!this.state.text.length) {
-			console.error("Please enter a post at: index.js:react, line 154");
+			console.error("Please enter a post at: index.js:react, line 152");
 			return;
 		}
 		const newItem = {
@@ -258,7 +258,7 @@ class List extends React.Component {
 */
 function RenderWorld(root) {
 	if (!root) {
-		throw new Error("No root defined", "index.js", 263);
+		throw new Error("No root defined", "index.js", 261);
 	}
 	ReactDOM.render(
 		<NewWorld
@@ -271,7 +271,7 @@ function RenderWorld(root) {
 }
 function RenderMainLayout(root, header, content, footer) {
 	if (!root) {
-		throw new Error("No root defined", "index.js", 276);
+		throw new Error("No root defined", "index.js", 274);
 	}
 	ReactDOM.render(
 		<MainLayout
