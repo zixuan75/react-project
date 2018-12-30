@@ -1,3 +1,7 @@
+[Download ZIP File](https://github.com/zixuan75/react-project/archive/v.1.0.7.zip)
+
+[Download TAR Ball](https://github.com/zixuan75/react-project/archive/v.1.0.7.tar.gz)
+
 # :rainbow: The React:laughing: Project:star::stars:: [![Coverage Status](https://coveralls.io/repos/github/zixuan75/react-project/badge.svg)](https://coveralls.io/github/zixuan75/react-project?branch=master):fire:
 
 Welcome to The React Project!:2nd_place_medal:
@@ -77,7 +81,9 @@ With React Devtools:
   </App>
 </div>
 ```
+
 ## NPM notice
+
 Please note that NPM has not been working well and is getting a error part of the time when alax99's trying to look on localhost:8000 and nothing is happening right now.
 
 It's just getting many errors on alax99's Windows device. NPM can install create-react-app but can't run the app using React Scripts. I don't know why, but it's just breaking on the CommandTerminal for Windows.
