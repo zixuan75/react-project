@@ -88,6 +88,10 @@ class WorldBody extends React.Component {
 				<button className="btn" onClick={() => this.handleClick()}>
 					{buttonName}
 				</button>
+				<hr />
+				<footer>
+					<p>Thanks for playing the React game.</p>
+				</footer>
 			</div>
 		);
 	}
