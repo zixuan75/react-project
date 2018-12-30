@@ -8,7 +8,7 @@ Welcome to The React Project!
 
 There are two ways you can run the code: with learning JSX and without.
 
-**Learning JSX is not required. You can also learn at [React's official website](https://reactjs.org).**
+**Learning JSX is completely not required. You can also learn at [React's official website](https://reactjs.org).**
 
 If you want to learn jsx, you could just take our wiki. Or you can also learn at React's official website.
 
