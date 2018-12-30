@@ -1,28 +1,16 @@
-/* React.boot({
-  name: "rx",
-  toboot: function(){
-    function render(){
-      var rxReact=React.render(
-        <div>
-          Welcome to RXReact!
-        </div>
-      );
-      return React.renderData("rx") => {
-        get rxReact from React.data(rxReact).renderJSX();
-        return ("object", {var:rxReact.structure()});
-      };
-    };
-    return render() => React.renderData("rx, boot").css("margin", "0");
-  }
-})("RX-Scripts");  
+/* 
+React.render("rx", {
+  data: React.find({component: "rx"}).fetchData()
+});
+React.rconv("rx-scripts").from({data: data});
 */
 .allow-margins {
-  margin-left: 5px;
+	margin-left: 5px;
 }
 .no-margins {
-  margin: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 }
 
 .jumbotron {
-  background-color: lightgray;
+	background-color: lightgray;
 }

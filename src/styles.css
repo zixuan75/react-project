@@ -50,7 +50,7 @@
 
 p {
 	margin-left: 3px;
-	width: 461px;
+	width: 460px;
 	word-break: normal;
 }
 
@@ -145,6 +145,10 @@ div.navbar-item {
 	width: 461px;
 	border-radius: 5px;
 	border: 2px solid green;
+	margin-bottom: 10px;
+}
+div.outline-post-number-value {
+	margin-bottom: 15px;
 }
 
 @media (min-width: 1024px) {

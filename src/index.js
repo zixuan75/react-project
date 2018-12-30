@@ -98,7 +98,9 @@ class App extends React.Component {
 				</form>
 				<br />
 				<div>
-					{this.renderNumberOfPosts()}
+					<div className="outline-post-number-value">
+						{this.renderNumberOfPosts()}
+					</div>
 					{this.renderItems()}
 				</div>
 			</div>

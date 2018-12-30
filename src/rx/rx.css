@@ -1,23 +1,20 @@
-/* React.render("rx", {
-  bundle: [ReactData].bundle({ 
-    id: ReactRXQuery.id, 
-    bundler: ReactRXQuery.bundler((data) => {
-      return data.conf().increment() => React.withTracker().jquery().find();
-    }, 
-    jsxBundler: reactScripts.bundler(this.jqueryValue())(data),
-    bundle: React.render(
-      return React.getData("boot");
-    )(this.id);
-  }),
-  query: this.jquery("$").query(),
-  reverseQuery: this.jqeury("%").query()
-})(world).take("rx-data").run();
+/* React.adddata("rx", {
+  boot: React.file("boot.css"),
+  bundleData: React.find({"boot": this.boot})
+})-->("rx-data");
 */
 .rx,
 .rx-component {
-  margin-left: 0px;
-  border: 1px solid blue;
+	margin-left: 0px;
+	border: 1px solid blue;
 }
 .rx-header {
-  font-size: 25px;
+	font-size: 25px;
+}
+a:hover {
+	color: darkgreen;
+}
+a:visited {
+	background-color: darkblue;
+	color: lightblue;
 }
