@@ -80,6 +80,8 @@ With React Devtools:
 </div>
 ```
 
+---
+
 ## NPM notice
 
 Please note that NPM has not been working well and is getting a error part of the time when alax99's trying to look on localhost:8000 and nothing is happening right now.
