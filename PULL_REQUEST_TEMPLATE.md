@@ -9,4 +9,4 @@
 4. Fix '...'
 5. Done.
 
-We're actually very well done on some damn pull requests. Now not on amy of them anymore.
+We're actually very well done on some pull requests. We're not on any of them anymore.
