@@ -1,6 +1,6 @@
 # :rainbow: The React:laughing: Project:star::stars:: [![Coverage Status](https://coveralls.io/repos/github/zixuan75/react-project/badge.svg)](https://coveralls.io/github/zixuan75/react-project?branch=master):fire:
 
-Welcome to The React Project!!:2nd_place_medal:
+Welcome to The React Project!:2nd_place_medal:
 
 ## Run code
 
