@@ -78,4 +78,6 @@ With React Devtools:
 </div>
 ```
 ## NPM notice
-Please note that NPM has not been working well and is getting a error part of the time when alax99's trying to look on localhost:8000 and nothing is happening.
+Please note that NPM has not been working well and is getting a error part of the time when alax99's trying to look on localhost:8000 and nothing is happening right now.
+
+It's just getting many errors on alax99's Windows device. NPM can install create-react-app but can't run the app using React Scripts. I don't know why, but it's just breaking on the CommandTerminal for Windows.

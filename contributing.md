@@ -1,9 +1,5 @@
 # Welcome to The React Project!
 
-<!-- This is the Winter Brake of this project and will never be releasing more versions until April 2019. -->
-
-(This Winter Brake has gone and now we're back at December because alax99 says Winter Brakes will always end between December 20 and November 10.)
-
 Hello world! Welcome to our project!!
 
 Table of Contents:
