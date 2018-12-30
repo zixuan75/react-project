@@ -56,7 +56,7 @@ If you don't have those versions installed yet, you can just upgrade your old NP
 
 ## Remember
 
-Remember, we're using React, so it's going to render those components with the id="component name" unless if you have React Devtools where you can look at the JSX components.
+Remember, we're using React, so it's going to render those components with the id="component name" unless if you have React Devtools where you can look at the JSX components and how it renders them.
 
 With no React Devtools:
 
@@ -77,3 +77,5 @@ With React Devtools:
   </App>
 </div>
 ```
+## NPM notice
+Please note that NPM has not been working well and is getting a error part of the time when alax99's trying to look on localhost:8000 and nothing is happening.
