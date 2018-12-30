@@ -1,8 +1,10 @@
+# :rainbow: The React:laughing: Project:star: :stars: : :fire:
+
 [Download ZIP File](https://github.com/zixuan75/react-project/archive/v.1.0.7.zip)
 
 [Download TAR Ball](https://github.com/zixuan75/react-project/archive/v.1.0.7.tar.gz)
 
-# :rainbow: The React:laughing: Project:star::stars:: [![Coverage Status](https://coveralls.io/repos/github/zixuan75/react-project/badge.svg)](https://coveralls.io/github/zixuan75/react-project?branch=master):fire:
+[![Coverage Status](https://coveralls.io/repos/github/zixuan75/react-project/badge.svg)](https://coveralls.io/github/zixuan75/react-project?branch=master)
 
 Welcome to The React Project!:2nd_place_medal:
 
