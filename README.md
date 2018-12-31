@@ -7,7 +7,7 @@ Welcome to The React Project!
 
 ## Running the code<-!
 
-There are two ways you can run the code: with learning JSX and without.
+There are actually two ways you can run the code: with learning JSX and without.
 
 **Learning JSX is completely not required. You can also learn at [React's official website](https://reactjs.org).**
 
