@@ -10,8 +10,8 @@ import "./styles.css";
 // Properties
 var properties = {
   myProperty: "This is a property",
-  rxdetail: "RX is not installed.",
-  rxinstalled: "no",
+  rxdetail: "RX is installed.",
+  rxinstalled: "yes",
   rxcheck() {
     if (this.rxinstalled === "yes") {
       return (
