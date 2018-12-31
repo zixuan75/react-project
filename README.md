@@ -5,7 +5,7 @@
 
 Welcome to The React Project!
 
-## Running the code<-
+## Running the code<-!
 
 There are two ways you can run the code: with learning JSX and without.
 
