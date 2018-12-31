@@ -17,6 +17,7 @@
 }
 .rx-header {
   font-size: 25px;
+  margin-bottom: 10px;
 }
 a:hover {
   color: darkgreen;
@@ -24,4 +25,7 @@ a:hover {
 a:visited {
   background-color: darkblue;
   color: lightblue;
+}
+.sr-only {
+  display: none;
 }

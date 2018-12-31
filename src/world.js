@@ -27,6 +27,10 @@ export default class NewWorld extends React.Component {
               buttonName="Change it!"
               logThis={logThis}
             />
+            <hr />
+            <div>
+              <WorldFooter />
+            </div>
           </div>
         </div>
       );
@@ -64,7 +68,7 @@ class WorldBody extends React.Component {
     let { buttonName } = this.props;
     return (
       <div>
-        <div>
+        <div className="sr-only">
           <p>{this.state.alternateVal}</p>
         </div>
         <div className="jumbotron">
@@ -97,11 +101,17 @@ class WorldBody extends React.Component {
         <button className="btn" onClick={() => this.handleClick()}>
           {buttonName}
         </button>
-        <hr />
-        <footer>
-          <p>Thanks for playing the React game.</p>
-        </footer>
       </div>
+    );
+  }
+}
+
+class WorldFooter extends React.Component {
+  render() {
+    return (
+      <footer>
+        <p>Thank you for visiting the React world page.</p>
+      </footer>
     );
   }
 }
