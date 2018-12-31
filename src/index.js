@@ -90,7 +90,7 @@ class App extends React.Component {
           to my repository so I can receive the same changes that you made.
         */}
         <Text
-          message="This is Todo v.1.0.4. Welcome"
+          message="This is Todo v.1.0.7. Welcome"
           buttonName="Click me!"
           properties={properties}
         />
@@ -235,7 +235,8 @@ class Text extends React.Component {
         </div>
         <button
           className="btn"
-          onClick={() => this.handleClick("Hello world!")}>
+          onClick={() => this.handleClick("Hello world!")}
+        >
           {buttonName}
         </button>
         <div className="auto-message-box">
