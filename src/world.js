@@ -11,11 +11,11 @@ export default class NewWorld extends React.Component {
       console.error(this.props.rxdetail);
       return (
         <div className="jumbotron">
-          <h1 className="error">NO RX INSTALLED.</h1>
+          <h1 className="error">No RX installed.</h1>
           <p>Please install RX to function the classes correctly.</p>
         </div>
       );
-    } else {
+    } else if (this.props.rxinstalled === "yes") {
       return (
         <div>
           <div className="rx rx-component">
@@ -48,20 +48,25 @@ class WorldBody extends React.Component {
     super(props);
     this.state = {
       next: true,
-      status: "X"
+      status: "X",
+      alternateVal: "RX-World component"
     };
   }
   handleClick() {
-    this.setState({
-      next: !this.state.next,
-      status: this.state.next ? "X" : "O"
-    });
+    this.setState(state => ({
+      next: !state.next,
+      status: state.next ? "X" : "O"
+    }));
+    console.log("Set to " + (this.state.next ? "X" : "O"));
   }
   render() {
     const status = "Next changer: " + this.state.status;
     let { buttonName } = this.props;
     return (
       <div>
+        <div>
+          <p>{this.state.alternateVal}</p>
+        </div>
         <div className="jumbotron">
           <p className="h1">Welcome here!</p>
           <p>
