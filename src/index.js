@@ -30,8 +30,8 @@ var properties = {
 };
 
 /* 
-  Begin of main file
   -------------------------------------------------------------
+	Begin of main file
 */
 export default class MainLayout extends React.Component {
   render() {
