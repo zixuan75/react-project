@@ -5,7 +5,8 @@ import "./rx/boot.css";
 
 export default class NewWorld extends React.Component {
   render() {
-    console.log(this.props.logThis);
+    let { logThis } = this.props;
+    console.log(logThis);
     if (this.props.rxinstalled === "no") {
       console.error(this.props.rxdetail);
       return (
@@ -21,10 +22,10 @@ export default class NewWorld extends React.Component {
             <div className="rx-header">
               <WorldHeader />
             </div>
-            <p>{this.props.logThis}.</p>
             <WorldBody
               alt="Lynx Blue Line at Tremont Station"
               buttonName="Change it!"
+              logThis={logThis}
             />
           </div>
         </div>
@@ -79,6 +80,9 @@ class WorldBody extends React.Component {
           </p>
         </div>
         <br />
+        <div>
+          <p>{this.props.logThis}</p>
+        </div>
         <input className="squares-i" readOnly value={status} />
         <p className="allow-margins">
           [{this.state.status}]: Near Winner (Please be careful of the "near".
