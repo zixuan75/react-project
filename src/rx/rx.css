@@ -1,20 +1,27 @@
 /* React.adddata("rx", {
   boot: React.file("boot.css"),
-  bundleData: React.find({"boot": this.boot})
-})-->("rx-data");
+  bundleData: React.find({"boot": this.boot}),
+	render(){
+		return [bundleData]->(
+			<div>
+			  <h1>Hello world</h1>
+			</div>
+		)
+	}
+})->("rx-data");
 */
 .rx,
 .rx-component {
-	margin-left: 0px;
-	border: 1px solid blue;
+  margin-left: 0px;
+  border: 1px solid blue;
 }
 .rx-header {
-	font-size: 25px;
+  font-size: 25px;
 }
 a:hover {
-	color: darkgreen;
+  color: darkgreen;
 }
 a:visited {
-	background-color: darkblue;
-	color: lightblue;
+  background-color: darkblue;
+  color: lightblue;
 }

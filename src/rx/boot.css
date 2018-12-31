@@ -2,15 +2,15 @@
 React.render("rx", {
   data: React.find({component: "rx"}).fetchData()
 });
-React.rconv("rx-scripts").from({data: data});
+React.rconv("rx-scripts").from({'data': this.getFiles().data});
 */
 .allow-margins {
-	margin-left: 5px;
+  margin-left: 5px;
 }
 .no-margins {
-	margin: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 .jumbotron {
-	background-color: lightgray;
+  background-color: lightgray;
 }
