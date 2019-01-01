@@ -118,16 +118,16 @@ class App extends React.Component {
         <br />
         <div>
           <div className="outline-post-number-value">
-            {this.renderNumberOfPosts()}
+            {this.renderNumberOfPosts(1)}
           </div>
           {this.renderItems()}
         </div>
       </div>
     );
   }
-  renderNumberOfPosts() {
+  renderNumberOfPosts(mininum) {
     var { length } = this.state.items;
-    if (length === 1) {
+    if (length === mininum) {
       return (
         <p className="post-number-value">
           You have {this.state.items.length} post.
