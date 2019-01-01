@@ -24,7 +24,7 @@ export default class NewWorld extends React.Component {
             </div>
             <WorldBody
               alt="Lynx Blue Line at Tremont Station"
-              buttonName="Change it!"
+              buttonName="Change It!"
               logThis={logThis}
             />
             <hr />
@@ -84,8 +84,7 @@ class WorldBody extends React.Component {
             the blue <span className="button-structure">{buttonName}</span>{" "}
             button as many times as you want to guess who will be the winner:
             you (or X as displayed in the game) or your friend (or O as
-            displayed in the game) so you can see who has the most energy of
-            React + JSX.
+            displayed in the game) to know who knows what is React.
           </p>
         </div>
         <br />
@@ -126,7 +125,7 @@ class WorldFooter extends React.Component {
         </p>
         <div>
           <button className="btn-stop" onClick={() => this.Number()}>
-            5 + 4
+            <math>5 + 4</math>
           </button>
         </div>
         <p>{this.state.jsx}</p>

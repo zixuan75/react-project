@@ -11,17 +11,17 @@ import "./styles.css";
 var properties = {
   myProperty: "This is a property",
   rxdetail: "RX is installed.",
-  rxinstalled: "yes",
+  rxinstalled: "yes", // no or yes, rxinstalled property
   rxcheck() {
     if (this.rxinstalled === "yes") {
       return (
-        <div>
+        <div className="rx-property">
           <p>Yes, RX is installed.</p>
         </div>
       );
     } else {
       return (
-        <div>
+        <div className="rx-property">
           <p>No, RX is not installed.</p>
         </div>
       );
