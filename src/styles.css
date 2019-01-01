@@ -57,7 +57,7 @@ p {
 #blue-line {
   float: left;
   margin-right: 10px;
-  border: 6px ridge yellow;
+  border: 10px ridge yellow;
 }
 #new-post {
   height: 200px;
