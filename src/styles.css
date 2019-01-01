@@ -145,6 +145,7 @@ div.navbar-item {
   width: 461px;
   border-radius: 5px;
   border: 2px solid green;
+  background-color: lightgreen;
   margin-bottom: 10px;
 }
 div.outline-post-number-value {

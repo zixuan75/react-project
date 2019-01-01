@@ -280,7 +280,7 @@ class List extends React.Component {
 */
 function RenderWorld(root) {
   if (!root) {
-    throw new Error("No root defined", "index.js", 282);
+    throw new Error("No root defined", "index.js", 283);
   }
   ReactDOM.render(
     <NewWorld
@@ -293,7 +293,7 @@ function RenderWorld(root) {
 }
 function RenderMainLayout(root, header, content, footer) {
   if (!root) {
-    throw new Error("No root defined", "index.js", 295);
+    throw new Error("No root defined", "index.js", 296);
   }
   ReactDOM.render(
     <MainLayout
@@ -308,4 +308,4 @@ function RenderMainLayout(root, header, content, footer) {
 
 RenderMainLayout("root", <Header />, <App />, <Footer />);
 
-RenderWorld("world");
+RenderWorld();
