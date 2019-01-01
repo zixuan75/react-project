@@ -90,7 +90,7 @@ class App extends React.Component {
           to my repository so I can receive the same changes that you made.
         */}
         <Text
-          message="This is Todo v.1.0.7. Welcome"
+          message="This is Todo v.1.7. Welcome"
           buttonName="Click me!"
           properties={properties}
         />
