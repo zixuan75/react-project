@@ -308,4 +308,4 @@ function RenderMainLayout(root, header, content, footer) {
 
 RenderMainLayout("root", <Header />, <App />, <Footer />);
 
-RenderWorld();
+RenderWorld("world");
