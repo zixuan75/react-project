@@ -107,10 +107,29 @@ class WorldBody extends React.Component {
 }
 
 class WorldFooter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      jsx: "?"
+    };
+  }
+  Number() {
+    this.setState({ jsx: "9" });
+  }
   render() {
     return (
       <footer>
-        <p>Thank you for visiting the React world page.</p>
+        <p>
+          Thank you for visiting the React world page. Here's a math problem.
+          First, give a shot at it. Then check the answer by clicking on the
+          math problem.
+        </p>
+        <div>
+          <button className="btn-stop" onClick={() => this.Number()}>
+            5 + 4
+          </button>
+        </div>
+        <p>{this.state.jsx}</p>
       </footer>
     );
   }

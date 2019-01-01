@@ -181,3 +181,7 @@ p.h3 {
   background-color: darkblue;
   color: white;
 }
+.btn-stop {
+  border-radius: 0px;
+  background-color: white;
+}
