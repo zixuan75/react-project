@@ -149,11 +149,13 @@ class App extends React.Component {
     return this.getItems().map(item => {
       var theVarcharValueOfPosts = this.state.items.length;
       return (
-        <List
-          myVarcharValueForPost={theVarcharValueOfPosts}
-          key={item.id}
-          item={item}
-        />
+        <div>
+          <List
+            myVarcharValueForPost={theVarcharValueOfPosts}
+            key={item.id}
+            item={item}
+          />
+        </div>
       );
     });
   }
@@ -260,9 +262,9 @@ class List extends React.Component {
     let { item } = this.props;
     return (
       <div className="varchar-list">
-        {/* <div className="the-varchar-value">
-          Submit value of {this.props.myVarcharValueForPost} on each one
-        </div> */}
+        <div className="the-varchar-value">
+          <p>{this.props.myVarcharValueForPost} posts in all</p>
+        </div>
         <div className="list">
           <p className="h3">{item.user}</p>
           <br />
