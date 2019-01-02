@@ -111,14 +111,12 @@ class App extends React.Component {
             value={this.state.text}
           />
           <br />
-          <button className="btn-300">
-            Save Post #{this.state.items.length + 1}
-          </button>
+          <button className="btn-300">Save Post #{this.state.items.length + 1}</button>
         </form>
         <br />
         <div>
-          <div className="outline-post-number-value">
-            {this.renderNumberOfPosts(1)}
+          <div className="post-number-value-outline">
+            <div className="post-number-values">{this.renderNumberOfPosts(1)}</div>
           </div>
           {this.renderItems()}
         </div>
@@ -130,13 +128,19 @@ class App extends React.Component {
     if (length === mininum) {
       return (
         <p className="post-number-value">
-          You have {this.state.items.length} post.
+          You have {this.state.items.length} post. Keep adding more!
+        </p>
+      );
+    } else if (length === 0) {
+      return (
+        <p className="post-number-value">
+          You have {this.state.items.length} posts. Try to turn it first.
         </p>
       );
     } else {
       return (
         <p className="post-number-value">
-          You have {this.state.items.length} posts.
+          You have {this.state.items.length} posts. Great post work!
         </p>
       );
     }
@@ -168,11 +172,11 @@ class App extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     if (!this.state.user.length) {
-      console.error("Please enter a correct user at: index.js:react, line 171");
+      console.error("Please enter a correct user at: index.js:react, line 175");
       // return;
     }
     if (!this.state.text.length) {
-      console.error("Please enter a post at: index.js:react, line 175");
+      console.error("Please enter a post at: index.js:react, line 179");
       return;
     }
     const newItem = {
@@ -196,9 +200,9 @@ class Text extends React.Component {
   }
   renderUser() {
     if (this.state.myuser) {
-      return <p className="right">Hello {this.state.myuser}</p>;
+      return <p className="text-align-right">Hello {this.state.myuser}</p>;
     } else {
-      return <p className="right">Hello Stranger</p>;
+      return <p className="text-align-right">Hello Stranger</p>;
     }
   }
   render() {
@@ -235,10 +239,7 @@ class Text extends React.Component {
             </div>
           </div>
         </div>
-        <button
-          className="btn"
-          onClick={() => this.handleClick("Hello world!")}
-        >
+        <button className="btn" onClick={() => this.handleClick("Hello world!")}>
           {buttonName}
         </button>
         <div className="auto-message-box">
@@ -282,7 +283,7 @@ class List extends React.Component {
 */
 function RenderWorld(root) {
   if (!root) {
-    throw new Error("No root defined", "index.js", 285);
+    throw new Error("No root defined", "index.js", 286);
   }
   ReactDOM.render(
     <NewWorld
@@ -295,7 +296,7 @@ function RenderWorld(root) {
 }
 function RenderMainLayout(root, header, content, footer) {
   if (!root) {
-    throw new Error("No root defined", "index.js", 298);
+    throw new Error("No root defined", "index.js", 299);
   }
   ReactDOM.render(
     <MainLayout
