@@ -256,7 +256,7 @@ class Text extends React.Component {
         </button>
         <div className="auto-message-box">
           <p className="auto-message auto-message-display-none">
-            React and ReactDOM 16.5.2, ReactScripts 2.1.1@latest
+            React and ReactDOM 16.5.2, ReactScripts 2.1.3@latest
           </p>
         </div>
         <div className="auto-message-box">
