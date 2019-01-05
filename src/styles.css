@@ -194,3 +194,17 @@ p.h3 {
   height: 60px;
   width: 60px;
 }
+button.btn-card-vertical {
+  text-align: center;
+}
+form button.row-del {
+  margin-left: 5px;
+  margin-top: 5px;
+  padding-right: 10px;
+}
+.post-number-values-default {
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}

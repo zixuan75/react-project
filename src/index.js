@@ -93,7 +93,14 @@ class App extends React.Component {
           message="This is Todo v.1.7. Welcome"
           buttonName="Click me!"
           properties={properties}
-        />
+        >
+          <div>
+            <div className="auto-message-box">
+              <p className="auto-message">Hi everybody!</p>
+            </div>
+            <p>Wallo.</p>
+          </div>
+        </Text>
         <form onSubmit={this.handleSubmit}>
           <input
             aria-label="User name"
@@ -111,12 +118,16 @@ class App extends React.Component {
             value={this.state.text}
           />
           <br />
-          <button className="btn-300">Save Post #{this.state.items.length + 1}</button>
+          <button className="btn-300 btn-card-vertical row-del">
+            Save Post #{this.state.items.length + 1}
+          </button>
         </form>
         <br />
         <div>
           <div className="post-number-value-outline">
-            <div className="post-number-values">{this.renderNumberOfPosts(1)}</div>
+            <div className="post-number-values post-number-values-default">
+              {this.renderNumberOfPosts(1)}
+            </div>
           </div>
           {this.renderItems()}
         </div>
@@ -172,11 +183,11 @@ class App extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     if (!this.state.user.length) {
-      console.error("Please enter a correct user at: index.js:react, line 175");
+      console.error("Please enter a correct user at: index.js:react, line 186");
       // return;
     }
     if (!this.state.text.length) {
-      console.error("Please enter a post at: index.js:react, line 179");
+      console.error("Please enter a post at: index.js:react, line 190");
       return;
     }
     const newItem = {
@@ -209,7 +220,8 @@ class Text extends React.Component {
     let { message, buttonName } = this.props;
     return (
       <div>
-        {this.renderUser()}
+        {this.props.children}
+        <div>{this.renderUser()}</div>
         <a href="#content">
           <img
             width="100"
@@ -283,7 +295,7 @@ class List extends React.Component {
 */
 function RenderWorld(root) {
   if (!root) {
-    throw new Error("No root defined", "index.js", 286);
+    throw new Error("No root defined", "index.js", 300);
   }
   ReactDOM.render(
     <NewWorld
@@ -296,7 +308,7 @@ function RenderWorld(root) {
 }
 function RenderMainLayout(root, header, content, footer) {
   if (!root) {
-    throw new Error("No root defined", "index.js", 299);
+    throw new Error("No root defined", "index.js", 313);
   }
   ReactDOM.render(
     <MainLayout
