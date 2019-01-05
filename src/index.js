@@ -139,19 +139,19 @@ class App extends React.Component {
     if (length === mininum) {
       return (
         <p className="post-number-value">
-          You have {this.state.items.length} post. Keep adding more!
+          You have {length} post. Keep adding more posts!
         </p>
       );
     } else if (length === 0) {
       return (
         <p className="post-number-value">
-          You have {this.state.items.length} posts. Try to turn it first.
+          You have {length} posts. Try to turn it first.
         </p>
       );
     } else {
       return (
         <p className="post-number-value">
-          You have {this.state.items.length} posts. Great post work!
+          You have {length} posts. Great post work! You've got it!
         </p>
       );
     }
