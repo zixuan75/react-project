@@ -1,11 +1,11 @@
-# The Re<-->act Project
+# The React Project
 
 |Name|Status|Unknown|
 |Coveralls|[![Coverage Status](https://coveralls.io/repos/github/zixuan75/react-project/badge.svg)](https://coveralls.io/github/zixuan75/react-project?branch=master)|True|
 
 Welcome to The React Project!
 
-## Running the code<-!
+## Running the code
 
 There are actually two ways you can run the code: with learning JSX and without.
 
@@ -85,6 +85,27 @@ With React Devtools:
     </Text>
   </App>
 </div>
+```
+
+(Please note that styles get rendered inline while loading ReactDevtools.)
+
+```jsx
+return (
+  /*                      class "fancy"
+                             |
+                            \ / */
+  <div style="background-color: green; color: lightblue;">
+    <h1>HelloWorld</h1>
+  </div>
+);
+
+// becomes
+
+return (
+  <div style={{ backgroundColor: "green", color: "lightblue" }}>
+    <h1>HelloWorld</h1>
+  </div>
+);
 ```
 
 ---
