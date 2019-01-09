@@ -87,27 +87,6 @@ With React Devtools:
 </div>
 ```
 
-(Please note that styles get rendered inline while loading ReactDevtools.)
-
-```jsx
-return (
-  /*                      class "fancy"
-                             |
-                            \ / */
-  <div style="background-color: green; color: lightblue;">
-    <h1>HelloWorld</h1>
-  </div>
-);
-
-// becomes
-
-return (
-  <div style={{ backgroundColor: "green", color: "lightblue" }}>
-    <h1>HelloWorld</h1>
-  </div>
-);
-```
-
 ---
 
 ## NPM notice
