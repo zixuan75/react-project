@@ -14,7 +14,7 @@ You can also learn to develop my complex app today at my wiki [right here](https
 
 ## Have some issues?
 
-If you have issues, please feel free to open a issue at my repository [right here](https://github.com/zixuan75/react-project/issues).
+If you have any issues, please feel free to open a issue at my repository [right here](https://github.com/zixuan75/react-project/issues).
 
 Be sure to follow the issue templates.
 
