@@ -18,11 +18,12 @@ export default class NewWorld extends React.Component {
     } else if (this.props.rxinstalled === "yes") {
       return (
         <div>
-          <div className="rx rx-component">
+          <div className="rx rx-component" id="container">
             <div className="rx-header">
               <WorldHeader />
             </div>
             <WorldBody
+              className="rx-component"
               alt="Lynx Blue Line at Tremont Station"
               buttonName="Change It!"
               logThis={logThis}
@@ -82,11 +83,11 @@ class WorldBody extends React.Component {
               width="175"
               alt={this.props.alt}
             />
-            If you feel like a world, you can just close your eyes and click on the blue{" "}
-            <span className="button-structure">{buttonName}</span> button as many times as
-            you want to guess who will be the winner: you (or X as displayed in the game)
-            or your friend (or O as displayed in the game) to know who knows what is
-            React.
+            If you feel like a world, you can just close your eyes and click on
+            the blue <span className="button-structure">{buttonName}</span>{" "}
+            button as many times as you want to guess who will be the winner:
+            you (or X as displayed in the game) or your friend (or O as
+            displayed in the game) to know who knows what is React.
           </p>
         </div>
         <br />
@@ -95,8 +96,9 @@ class WorldBody extends React.Component {
         </div>
         <input className="squares-i" readOnly value={status} />
         <p className="allow-margins">
-          [{this.state.status}]: Near Winner (Please be careful of the "near". After you
-          stop clicking it, the number shown in the box above is the real winner.)
+          [{this.state.status}]: Near Winner (Please be careful of the "near".
+          After you stop clicking it, the number shown in the box above is the
+          real winner.)
         </p>
         <button className="btn" onClick={() => this.handleClick()}>
           {buttonName}
@@ -120,8 +122,9 @@ class WorldFooter extends React.Component {
     return (
       <footer>
         <p>
-          Thank you for visiting the React world page. Here's a math problem. First, give
-          a little "shot" at it. Then check the answer by clicking on the math problem.
+          Thank you for visiting the React world page. Here's a math problem.
+          First, give a little "shot" at it. Then check the answer by clicking
+          on the math problem.
         </p>
         <div>
           <button className="btn-stop" onClick={() => this.Number()}>
