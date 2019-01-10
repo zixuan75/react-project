@@ -23,13 +23,21 @@ Then run:
 $ npx create-react-app my-app
 ```
 
+(**Note:** npx is not a typo - it's a package manager that comes with npm 5.2.0+. If you don't then do this:
+
+```
+$ npm install --global create-react-app
+create-react-app my-app
+```
+
+)
 Next, extract the file you downloaded from my repository.
 
 So then delete all of the files and folders in the my-app directory be sure not to delete the npm files and folders in the directory.
 
 Then replace the files and folder that you've deleted with all of the files in this project.
 
-Last, delete unnecessary files and folders on the directory by running these commands:
+Last, delete all unnecessary files and folders on the directory by running these commands:
 
 ```
 $ rm -rf source\*
@@ -71,7 +79,7 @@ With no React Devtools:
 
 ```html
 <div id="App">
-  <div id="Text"><p>...</p></div>
+	<div id="Text"><p>...</p></div>
 </div>
 ```
 
@@ -79,11 +87,11 @@ With React Devtools:
 
 ```jsx
 <div>
-  <App>
-    <Text>
-      <p>...</p>
-    </Text>
-  </App>
+	<App>
+		<Text>
+			<p>...</p>
+		</Text>
+	</App>
 </div>
 ```
 

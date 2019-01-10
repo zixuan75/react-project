@@ -9,27 +9,37 @@
 		)
 	}
 })->("rx-data");
+
+var myconfig = React.configuration({
+  boot: "rx-boot",
+  scripts: "rx-scripts"
+});
+myconfig.addToScript("rx-scripts", "boot");
 */
 .rx,
 .rx-component {
-  margin-left: 0px;
-  border: 1px solid blue;
-  border-top: 7px solid green;
+	margin-left: 0px;
+	border: 1px solid blue;
+	border-top: 7px solid green;
 }
 .rx-header {
-  font-size: 25px;
-  margin-bottom: 10px;
+	font-size: 25px;
+	margin-bottom: 10px;
 }
 a:hover {
-  color: darkgreen;
+	color: darkgreen;
 }
 a:visited {
-  background-color: darkblue;
-  color: lightblue;
+	background-color: darkblue;
+	color: lightblue;
+	border: 2px dotted greenyellow;
 }
 .sr-only {
-  display: none;
+	display: none;
 }
 #container {
-  border-top: 15px solid purple;
+	border-top: 15px solid purple;
+}
+.fancy-math-exp {
+	font-family: "Courier New", Courier, monospace;
 }

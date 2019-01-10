@@ -9,3 +9,5 @@ The page is particularly stylish because we have a lot of CSS rules. That's why 
 We're good to add more code but we also have to improve our code. So we're trying to, but we're approaching January 27th which is the deadline. There is still a month before when #24 should be closed. So we still need to work a lot before #24 gets closed.
 
 Note: It has been shut down a bit lately but we're back now.
+
+(We're introducing our RX library for src. [Learn more at ReactJS.org](https://reactjs.org).)

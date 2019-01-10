@@ -1,19 +1,43 @@
-/* 
+/*
+
 React.render("rx", {
   data: React.find({component: "rx"}).fetchData()
 });
+var config = React.configuration(
+  (this.rules.dump(), React.cssRules("rx")), 
+  {
+    allowMargins: function(event){
+      pass(event.id, React.list("allow-margins"));
+      return true;
+    },
+    allowNoMargins: function(event){
+      pass(event.id, React.list("no-margins"));
+      return true;
+    },
+    allowJumbotrons: function(event){
+      pass(event.id, React.list("jumbotron"));
+      return true;
+    }
+  }
+)(React.cssRules("rx"));
+
+config.configuration.allowMargins(React.ElementUses(className("allow-margins")));
+config.configuration.allowNoMargins(React.ElementUses(className("no-margins")));
+config.configuration.allowJumbotrons(React.ElementUses(className("jumbotron")));
+
+React.addConfiguration(config, "rx-scripts");
 React.rconv("rx-scripts").from({'data': this.getFiles().data});
 */
 .allow-margins {
-  margin-left: 5px;
+	margin-left: 5px;
 }
 .no-margins {
-  margin: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 }
 
 .jumbotron {
-  background-color: lightgray;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  margin: 4px;
+	background-color: lightgray;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	margin: 4px;
 }

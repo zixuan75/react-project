@@ -4,8 +4,8 @@ Hello world! Welcome to our project!!
 
 Table of Contents:
 
-1. [Have some issues?](https://github.com/zixuan75/react-project/blob/master/contributing.md#Have-some-issues)
-2. [Can you fix a issue?](https://github.com/zixuan75/react-project/blob/master/contributing.md#Can-you-fix-a-issue)
+- [Have some issues?](https://github.com/zixuan75/react-project/blob/master/contributing.md#Have-some-issues)
+  - [Can you fix a issue?](https://github.com/zixuan75/react-project/blob/master/contributing.md#Can-you-fix-a-issue)
 
 ## React
 
@@ -20,7 +20,7 @@ Be sure to follow the issue templates.
 
 If you don't follow them, you might get in trouble.
 
-## Can you fix a issue?
+### Can you fix a issue?
 
 If you think you could fix a issue, you can open a pull request at my repository [right here](https://github.com/zixuan75/react-project/pulls) to fix a issue and close it. Also please be nice to the person who made the issue.
 

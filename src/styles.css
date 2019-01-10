@@ -1,210 +1,219 @@
+/*
+React.allow({
+  name: "rx",
+  properties: {
+    return React.properties("rx");
+  }
+});
+*/
+
 #root,
 #world {
-  margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .post-number-value {
-  border: 10px solid pink;
-  width: 130px;
+	border: 10px solid pink;
+	width: 130px;
 }
 .jumbotron {
-  border: 3px solid green;
+	border: 3px solid green;
 }
 .error {
-  color: darkred;
+	color: darkred;
 }
 
 .auto-message {
-  border: 5px solid darkgreen;
+	border: 5px solid darkgreen;
 }
 
 .auto-message-display-none {
-  display: none;
+	display: none;
 }
 .squares-i {
-  width: 110px;
-  height: 50px;
-  border: 5px solid blue;
+	width: 110px;
+	height: 50px;
+	border: 5px solid blue;
 }
 .react-project-heading {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  text-align: center;
-  background-color: #ccc;
-  padding-top: 10px;
-  padding-bottom: 10px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	text-align: center;
+	background-color: #ccc;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .body {
-  background-color: #eee;
+	background-color: #eee;
 }
 
 ::-moz-placeholder {
-  /* Firefox only! */
-  font-family: "Arial", sans-serif;
+	/* Firefox only! */
+	font-family: "Arial", sans-serif;
 }
 
 p.text-align-right {
-  text-align: right;
+	text-align: right;
 }
 
 p {
-  margin-left: 3px;
-  width: 490px;
-  word-break: normal;
+	margin-left: 3px;
+	width: 490px;
+	word-break: normal;
 }
 
 #blue-line {
-  float: left;
-  margin-right: 10px;
-  border: 10px ridge yellow;
+	float: left;
+	margin-right: 10px;
+	border: 10px ridge yellow;
 }
 #new-post {
-  height: 200px;
+	height: 200px;
 }
 
 #new-post,
 #user {
-  width: 420px;
-  border-radius: 10px;
-  border: 1px solid darkblue;
+	width: 420px;
+	border-radius: 10px;
+	border: 1px solid darkblue;
 }
 
 #new-post:focus,
 #user:focus {
-  border: 4px solid lightgreen;
+	border: 4px solid lightgreen;
 }
 
 .btn-300 {
-  width: 300px;
-  height: 300px;
-  box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.1);
+	width: 300px;
+	height: 300px;
+	box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .btn,
 .btn-300 {
-  border-radius: 10px;
-  background-color: darkblue;
-  color: white;
+	border-radius: 10px;
+	background-color: darkblue;
+	color: white;
 }
 
 .btn {
-  width: 200px;
-  height: 50px;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+	width: 200px;
+	height: 50px;
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn:focus,
 .btn-300:focus {
-  border: 5px solid blue;
+	border: 5px solid blue;
 }
 .navbar-collector {
-  background-color: #fffff3;
-  width: 200px;
+	background-color: #fffff3;
+	width: 200px;
 }
 
 a,
 .navbar-brand {
-  border-width: 175px;
-  background-color: #eee;
-  color: darkblue;
-  margin-left: 25px;
-  text-decoration: none;
+	border-width: 175px;
+	background-color: #eee;
+	color: darkblue;
+	margin-left: 25px;
+	text-decoration: none;
 }
 
 a {
-  background-color: lightgreen;
+	background-color: lightgreen;
 }
 
 .navbar-brand {
-  border: 2px solid green;
+	border: 2px solid green;
 }
 
 div.navbar-item {
-  border: 1px solid #ccc;
-  border-radius: 15px;
+	border: 1px solid #ccc;
+	border-radius: 15px;
 }
 
 .the-varchar-value {
-  text-align: center;
-  width: 512px;
+	text-align: center;
+	width: 512px;
 }
 
 .navbar-items {
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  width: 200px;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	width: 200px;
 }
 
 .body {
-  background-color: #eee;
+	background-color: #eee;
 }
 
 .list {
-  text-align: center;
-  width: 461px;
-  border-radius: 5px;
-  border: 2px solid green;
-  background-color: lightgreen;
-  margin-bottom: 10px;
+	text-align: center;
+	width: 461px;
+	border-radius: 5px;
+	border: 2px solid green;
+	background-color: lightgreen;
+	margin-bottom: 10px;
 }
 div.post-number-values {
-  margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 div.post-number-value-outline {
-  border: 1px solid black;
+	border: 1px solid black;
 }
 
 @media (min-width: 1024px) {
-  .navbar-collector {
-    background-color: #eee;
-  }
+	.navbar-collector {
+		background-color: #eee;
+	}
 
-  .navbar-brand {
-    margin-left: 15px;
-  }
+	.navbar-brand {
+		margin-left: 15px;
+	}
 }
 
 p.h1 {
-  font-size: 35px;
+	font-size: 35px;
 }
 
 p.h3 {
-  font-size: 20px;
-  margin-top: 0px;
-  margin-bottom: -15px;
-  margin-left: 0px;
-  margin-right: 0px;
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: -15px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 .main {
-  padding-left: 1px;
+	padding-left: 1px;
 }
 
 .button-structure {
-  background-color: darkblue;
-  color: white;
+	background-color: darkblue;
+	color: white;
 }
 .btn-stop {
-  margin-left: 2px;
-  border-radius: 0px;
-  border: 1px solid #999;
-  background-color: white;
-  height: 60px;
-  width: 60px;
+	margin-left: 2px;
+	border-radius: 0px;
+	border: 1px solid #999;
+	background-color: white;
+	height: 70px;
+	width: 70px;
 }
 button.btn-card-vertical {
-  text-align: center;
+	text-align: center;
 }
 form button.row-del {
-  margin-left: 5px;
-  margin-top: 5px;
-  padding-right: 10px;
+	margin-left: 5px;
+	margin-top: 5px;
+	padding-right: 10px;
 }
 .post-number-values-default {
-  margin-left: 5px;
-  padding-left: 5px;
-  padding-bottom: 5px;
-  padding-top: 10px;
+	margin-left: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-top: 10px;
 }
