@@ -13,6 +13,8 @@ There are actually two ways you can run the code: with learning JSX and without.
 
 If you want to learn JSX, you could just take our wiki, or you can also learn at React's official website.
 
+Wondering why some things happen? We have answers at the [README for src/](https://zixuan75.github.io/react-project/src).
+
 ### Run without learning JSX
 
 First of all, install NPM. Make sure you have NodeJS 6.0.0 or higher, and NPM 5.2.0 or higher.
@@ -79,7 +81,7 @@ With no React Devtools:
 
 ```html
 <div id="App">
-	<div id="Text"><p>...</p></div>
+  <div id="Text"><p>...</p></div>
 </div>
 ```
 
@@ -87,11 +89,11 @@ With React Devtools:
 
 ```jsx
 <div>
-	<App>
-		<Text>
-			<p>...</p>
-		</Text>
-	</App>
+  <App>
+    <Text>
+      <p>...</p>
+    </Text>
+  </App>
 </div>
 ```
 

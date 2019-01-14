@@ -171,6 +171,10 @@ div.post-number-value-outline {
   border: 1px solid black;
 }
 
+.no-javascript {
+  color: red;
+  border: 5px solid orange;
+}
 @media (min-width: 1024px) {
   .navbar-collector {
     background-color: #eee;
@@ -206,6 +210,7 @@ p.h3 {
   border-radius: 0px;
   border: 1px solid #999;
   background-color: white;
+  color: black;
   height: 70px;
   width: 70px;
 }
