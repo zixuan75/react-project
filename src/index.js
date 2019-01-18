@@ -78,7 +78,7 @@ class App extends React.Component {
     let userClassName = "user";
     // let { myuser } = this.state;
     return (
-      <div>
+      <div className="App">
         {/* 
           Hello and welcome here, everybody. 
           You're free to edit this file anytime at my github repository

@@ -13,6 +13,12 @@ React.allow({
   font-family: Arial, Helvetica, sans-serif;
   color: black;
 }
+.App {
+  border: 2px solid red;
+  margin-left: 10px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
 .post-number-value {
   border: 10px solid pink;
   width: 130px;
