@@ -49,7 +49,11 @@ export default class MainLayout extends React.Component {
 }
 class Header extends React.Component {
   render() {
-    return <p className="h1">Hello world</p>;
+    return (
+      <p className="h1" id="hello-heading">
+        Hello world
+      </p>
+    );
   }
 }
 class Footer extends React.Component {
@@ -138,7 +142,7 @@ class App extends React.Component {
           You have {length} post. Keep adding more posts!
         </p>
       );
-    } else if (length === 0) {
+    } else if (length === mininum - 1) {
       return (
         <p className="post-number-value">
           You have {length} posts. Try to turn it first.
@@ -231,7 +235,7 @@ class Text extends React.Component {
           <div className="navbar-items">
             <div className="navbar-item">
               <br />
-              <a className="navbar-brand" href="#content">
+              <a className="navbar-brand" href="#welcome-heading">
                 <span>Home</span>
               </a>
               <br />
@@ -239,7 +243,7 @@ class Text extends React.Component {
             </div>
             <div className="navbar-item">
               <br />
-              <a className="navbar-brand" href="#new">
+              <a className="navbar-brand" href="#hello-heading">
                 <span>Page</span>
               </a>
               <br />

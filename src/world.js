@@ -48,8 +48,8 @@ export default class NewWorld extends React.Component {
 function WorldHeader() {
   return (
     <div>
-      <a href="#content">Home</a>
-      <a href="#new">Page</a>
+      <a href="#welcome-heading">Home</a>
+      <a href="#hello-heading">Page</a>
     </div>
   );
 }
@@ -79,7 +79,9 @@ class WorldBody extends React.Component {
           <p>{this.state.alternateVal}</p>
         </div>
         <div className="jumbotron">
-          <p className="h1">Welcome here!</p>
+          <p className="h1" id="welcome-heading">
+            Welcome here!
+          </p>
           <p>
             <img
               id="blue-line"
