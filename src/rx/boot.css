@@ -21,9 +21,9 @@ var config = React.configuration(
   }
 )(React.cssRules("rx"));
 
-config.configuration.allowMargins(React.ElementUses(className("allow-margins")));
-config.configuration.allowNoMargins(React.ElementUses(className("no-margins")));
-config.configuration.allowJumbotrons(React.ElementUses(className("jumbotron")));
+config.configuration().allowMargins(React.ElementUses(new React.ClassName("allow-margins").uses()));
+config.configuration().allowNoMargins(React.ElementUses(new React.ClassName("no-margins").uses()));
+config.configuration().allowJumbotrons(React.ElementUses(new React.ClassName("jumbotron").uses()));
 
 React.addConfiguration(config, "rx-scripts");
 React.rconv("rx-scripts").from({'data': this.getFiles().data});
