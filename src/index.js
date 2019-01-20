@@ -151,7 +151,7 @@ class App extends React.Component {
     } else {
       return (
         <p className="post-number-value">
-          You have {length} posts. Great post work! You've got it!
+          You have {length} posts. Great post work! You've got it!'
         </p>
       );
     }
