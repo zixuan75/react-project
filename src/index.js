@@ -29,10 +29,7 @@ var properties = {
   }
 };
 
-/* 
-  -------------------------------------------------------------
-	Begin of main file
-*/
+// ----------- Begin of main file ------------
 export default class MainLayout extends React.Component {
   render() {
     console.log(this.props.logThis);
@@ -92,8 +89,7 @@ class App extends React.Component {
         <Text
           message="This is Todo v.1.7. Welcome"
           buttonName="Click me!"
-          properties={properties}
-        >
+          properties={properties}>
           <div>
             <div className="auto-message-box">
               <p className="auto-message">Hi everybody!</p>
@@ -253,8 +249,7 @@ class Text extends React.Component {
         </div>
         <button
           className="btn"
-          onClick={() => this.handleClick("Hello world!")}
-        >
+          onClick={() => this.handleClick("Hello world!")}>
           {buttonName}
         </button>
         <div className="auto-message-box">
