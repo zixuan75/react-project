@@ -12,11 +12,11 @@ var properties = {
   myProperty: "This is a property",
   rxdetail: "RX is installed.",
   rxinstalled: "yes", // no or yes, rxinstalled property
-  renderIfInstalled() {
+  renderIfInstalled(nChecks) {
     if (this.rxinstalled === "yes") {
       return (
         <div className="rx-property">
-          <p>Yes, RX is installed.</p>
+          <p>Yes, RX is installed at {"v" + nChecks}.</p>
         </div>
       );
     } else {
@@ -264,7 +264,7 @@ class Text extends React.Component {
         <div className="auto-message-box">
           <p className="auto-message">{message}!</p>
         </div>
-        {this.props.properties.renderIfInstalled()}
+        {this.props.properties.renderIfInstalled("1.3.2")}
       </div>
     );
   }
