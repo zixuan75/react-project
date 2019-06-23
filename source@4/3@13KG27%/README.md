@@ -1,8 +1,0 @@
-# RESCT RESCT
-
-YY
-YY#\$
-
-##HELLOWORLD\$4
-
-7\_
