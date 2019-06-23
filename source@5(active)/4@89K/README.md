@@ -1,3 +1,0 @@
-# 7J
-
-HELLO WORLD
