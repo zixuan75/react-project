@@ -1,3 +1,4 @@
+/*
 import React from "react";
 import "./styles.css";
 import "./rx/rx.css";
@@ -142,3 +143,4 @@ class WorldFooter extends React.Component {
     );
   }
 }
+*/
