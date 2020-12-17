@@ -1,4 +1,7 @@
-/*
+// Welcome to the Complex App!
+// Author github:zixuan75 <wzixuanCC@gmail.com>/<wzixuanCC@hotmail.com>
+
+// index.js (version 1.0.7)
 import React from "react";
 import ReactDOM from "react-dom";
 import NewWorld from "./world.js";
@@ -77,11 +80,17 @@ class App extends React.Component {
     // let { myuser } = this.state;
     return (
       <div className="App">
-        
-        <Text
-          message="This is Todo v.1.7. Welcome"
-          buttonName="Click me!"
-          properties={properties}>
+        {/* 
+          Hello and welcome here, everybody. 
+          You're free to edit this file anytime at my github repository
+          https://github.com/zixuan75/react-project by forking
+          the project and making some commits.
+        */}
+        {/*
+          Make sure to make a pull request from your repisitory
+          to my repository so I can receive the same changes that you made.
+        */}
+        <Text buttonName="Click me!" properties={properties}>
           <div className="yellow">
             <div className="auto-message-box">
               <p className="auto-message">Hi everybody!</p>
@@ -149,7 +158,7 @@ class App extends React.Component {
     return items;
   }
   renderItems() {
-    return this.getItems().map(item => {
+    return this.getItems().map((item) => {
       var theVarcharValueOfPosts = this.state.items.length;
       return (
         <div>
@@ -183,7 +192,7 @@ class App extends React.Component {
       user: this.state.user,
       id: performance.now()
     };
-    this.setState(state => ({
+    this.setState((state) => ({
       items: state.items.concat(newItem),
       text: "",
       user: ""
@@ -219,29 +228,10 @@ class Text extends React.Component {
         </a>
         <br />
         <br />
-        <div className="navbar-collector">
-          <div className="navbar-items">
-            <div className="navbar-item">
-              <br />
-              <a className="navbar-brand" href="#welcome-heading">
-                <span>Home</span>
-              </a>
-              <br />
-              <br />
-            </div>
-            <div className="navbar-item">
-              <br />
-              <a className="navbar-brand" href="#hello-heading">
-                <span>Page</span>
-              </a>
-              <br />
-              <br />
-            </div>
-          </div>
-        </div>
         <button
           className="btn"
-          onClick={() => this.handleClick("Hello world!")}>
+          onClick={() => this.handleClick("Hello world!")}
+        >
           {buttonName}
         </button>
         <div className="auto-message-box">
@@ -278,6 +268,11 @@ class List extends React.Component {
   }
 }
 
+/* 
+  End of main file
+  ------------------------------------------------------------
+  Router configuration
+*/
 function RenderWorld(root) {
   if (!root) {
     throw new Error("No root defined", "index.js", 300);
@@ -307,6 +302,3 @@ function RenderMainLayout(root, header, content, footer) {
 }
 
 RenderMainLayout("root", <Header />, <App />, <Footer />);
-
-RenderWorld("world");
-*/

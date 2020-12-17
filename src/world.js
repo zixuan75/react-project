@@ -1,8 +1,5 @@
-/*
 import React from "react";
 import "./styles.css";
-import "./rx/rx.css";
-import "./rx/boot.css";
 
 export default class NewWorld extends React.Component {
   render() {
@@ -65,7 +62,7 @@ class WorldBody extends React.Component {
     };
   }
   handleClick() {
-    this.setState(state => ({
+    this.setState((state) => ({
       next: !state.next,
       status: state.next ? "X" : "O"
     }));
@@ -90,11 +87,6 @@ class WorldBody extends React.Component {
               width="175"
               alt={this.props.alt}
             />
-            If you feel like a world, you can just close your eyes and click on
-            the blue <span className="button-structure">{buttonName}</span>{" "}
-            button as many times as you want to guess who will be the winner:
-            you (or X as displayed in the game) or your friend (or O as
-            displayed in the game) to know who knows what is React.
           </p>
         </div>
         <br />
@@ -143,4 +135,3 @@ class WorldFooter extends React.Component {
     );
   }
 }
-*/
